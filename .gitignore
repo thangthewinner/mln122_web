@@ -207,7 +207,6 @@ temp-uploads/
 # Build artifacts
 artifacts/
 bin/
-lib/
 
 # Profiling data
 *.prof
