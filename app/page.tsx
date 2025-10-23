@@ -7,6 +7,7 @@ import DefinitionSection from '@/components/sections/DefinitionSection'
 import ImpactSection from '@/components/sections/ImpactSection'
 import CaseStudiesSection from '@/components/sections/CaseStudiesSection'
 import SolutionsSection from '@/components/sections/SolutionsSection'
+import GameSection from '@/components/sections/GameSection'
 
 export default function Home() {
   return (
@@ -33,26 +34,8 @@ export default function Home() {
         {/* Mục 6: Giải pháp */}
         <SolutionsSection />
 
-        {/* Skip Mục 7: Tương tác (Game) as requested */}
-        <section id="game" className="section bg-gradient-to-br from-purple-50 to-pink-50">
-          <div className="section-container">
-            <div className="text-center">
-              <div className="bg-white rounded-2xl shadow-lg p-12 max-w-3xl mx-auto">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Mục 7: Tương tác</h2>
-                <p className="text-xl text-gray-600 mb-8">
-                  Phần tương tác trò chơi/quiz đã được tạm thời bỏ qua theo yêu cầu.
-                </p>
-                <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg text-left">
-                  <h4 className="font-semibold text-purple-900 mb-3">📝 Ghi chú:</h4>
-                  <p className="text-purple-800">
-                    Trong bài thuyết trình thực tế, phần này sẽ là hoạt động tương tác trung tâm 
-                    nơi sinh viên tham gia trò chơi về tình huống con người - công nghệ.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Mục 7: Tương tác (Game) */}
+        <GameSection />
 
         {/* AI Appendix Section */}
         <section id="ai-appendix" className="section bg-gradient-to-br from-blue-50 to-purple-50">
