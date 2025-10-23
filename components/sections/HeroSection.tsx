@@ -78,16 +78,16 @@ const HeroSection = () => {
           </motion.div>
         )}
 
-        {/* Scroll indicator */}
+        {/* Scroll indicator - positioned at actual bottom of section */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: showQuestion ? 2 : 1 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="relative mt-24 text-center"
         >
           <motion.a
             href="#theory"
-            className="text-white hover:text-accent-300 transition-colors duration-200"
+            className="text-white hover:text-accent-300 transition-colors duration-200 inline-block"
             animate={{
               y: [0, 10, 0],
             }}
@@ -98,7 +98,7 @@ const HeroSection = () => {
               ease: 'easeInOut',
             }}
           >
-            <div className="flex flex-col items-center space-y-2">
+            <div className="flex flex-col items-center space-y-3">
               <span className="text-sm font-medium">Khám phá câu chuyện</span>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
