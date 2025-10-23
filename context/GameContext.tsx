@@ -8,8 +8,8 @@ import {
   GameSettings,
   PhaseResult,
   SaveData,
-} from '@/types/game';
-import { INITIAL_ACHIEVEMENTS, GAME_VERSION } from '@/lib/gameData';
+} from '../types/game';
+import { INITIAL_ACHIEVEMENTS, GAME_VERSION } from '../lib/gameData';
 
 interface GameContextType {
   gameState: GameState;

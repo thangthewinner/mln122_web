@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { PhaseResult, SustainabilityState } from '@/types/game';
+import { PhaseResult, SustainabilityState } from '../../../types/game';
 
 interface SustainabilityBalanceProps {
   onComplete: (result: PhaseResult) => void;

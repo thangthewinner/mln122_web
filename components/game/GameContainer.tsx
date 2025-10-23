@@ -2,15 +2,15 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGame } from '@/context/GameContext';
-import { PHASES } from '@/lib/gameData';
+import { useGame } from '../../context/GameContext';
+import { PHASES } from '../../lib/gameData';
 import GameStats from './GameStats';
 import GameProgress from './GameProgress';
 import BudgetAllocation from './minigames/BudgetAllocation';
 import TechTree from './minigames/TechTree';
 import NetworkBuilder from './minigames/NetworkBuilder';
 import SustainabilityBalance from './minigames/SustainabilityBalance';
-import { PhaseResult } from '@/types/game';
+import { PhaseResult } from '../../types/game';
 
 interface GameContainerProps {
   onGameComplete: () => void;

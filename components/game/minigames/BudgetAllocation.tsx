@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { PhaseResult, BudgetAllocation as IBudgetAllocation } from '@/types/game';
+import { PhaseResult, BudgetAllocation as IBudgetAllocation } from '../../../types/game';
 
 interface BudgetAllocationProps {
   onComplete: (result: PhaseResult) => void;

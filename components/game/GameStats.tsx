@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GameStats as IGameStats } from '@/types/game';
-import { STAT_LABELS, STAT_COLORS } from '@/lib/gameData';
+import { GameStats as IGameStats } from '../../types/game';
+import { STAT_LABELS, STAT_COLORS } from '../../lib/gameData';
 
 interface GameStatsProps {
   stats: IGameStats;

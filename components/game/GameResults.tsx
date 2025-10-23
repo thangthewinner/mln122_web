@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useGame } from '@/context/GameContext';
-import { GRADE_THRESHOLDS } from '@/lib/gameData';
-import { EndingType, GradeType } from '@/types/game';
+import { useGame } from '../../context/GameContext';
+import { GRADE_THRESHOLDS } from '../../lib/gameData';
+import { EndingType, GradeType } from '../../types/game';
 
 interface GameResultsProps {
   onPlayAgain: () => void;

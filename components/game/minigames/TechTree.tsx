@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { PhaseResult, TechProgress } from '@/types/game';
+import { PhaseResult, TechProgress } from '../../../types/game';
 
 interface TechTreeProps {
   onComplete: (result: PhaseResult) => void;

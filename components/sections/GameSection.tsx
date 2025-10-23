@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { GameProvider } from '@/context/GameContext';
-import GameWelcome from '@/components/game/GameWelcome';
-import GameContainer from '@/components/game/GameContainer';
-import GameResults from '@/components/game/GameResults';
+import { GameProvider } from '../../context/GameContext';
+import GameWelcome from '../game/GameWelcome';
+import GameContainer from '../game/GameContainer';
+import GameResults from '../game/GameResults';
 
 type GameScreen = 'welcome' | 'game' | 'results';
 

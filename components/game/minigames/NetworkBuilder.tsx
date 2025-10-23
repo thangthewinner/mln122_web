@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { PhaseResult, NetworkState } from '@/types/game';
+import { PhaseResult, NetworkState } from '../../../types/game';
 
 interface NetworkBuilderProps {
   onComplete: (result: PhaseResult) => void;
