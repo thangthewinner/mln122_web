@@ -99,98 +99,107 @@ const DefinitionSection = () => {
 
             {/* Visual/Infographic */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-2xl p-8 min-h-[400px] border-2 border-blue-100">
+              <div className="bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-2xl p-6 border-2 border-blue-100">
                 {/* Tech Gap Visualization */}
-                <div className="space-y-6">
-                  <h4 className="text-center text-xl font-bold text-gray-800 mb-6">
-                    Khoảng Cách Công Nghệ
+                <div className="space-y-5">
+                  <h4 className="text-center text-lg font-bold text-gray-800 mb-4">
+                    Minh Họa Khoảng Cách Công Nghệ
                   </h4>
                   
-                  {/* Gap 1: Innovation Index - Based on GII 2024 */}
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between text-sm text-gray-600">
-                      <span className="font-semibold">Singapore (Top ASEAN)</span>
-                      <span className="text-green-600 font-bold">64.7</span>
-                    </div>
-                    <div className="h-8 bg-gradient-to-r from-green-400 to-green-500 rounded-full relative overflow-hidden">
-                      <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
-                    </div>
-                    
-                    <div className="flex items-center justify-between text-sm text-gray-600 mt-4">
-                      <span className="font-semibold">Việt Nam (GII 2024)</span>
-                      <span className="text-orange-600 font-bold">36.2</span>
-                    </div>
-                    <div className="h-8 bg-gray-200 rounded-full relative overflow-hidden">
-                      <div className="h-full w-[56%] bg-gradient-to-r from-orange-400 to-orange-500 rounded-full relative">
-                        <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
-                      </div>
-                    </div>
-                    <div className="text-center">
-                      <span className="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">
-                        ⚠️ Chênh lệch 44%
-                      </span>
-                    </div>
-                    <p className="text-xs text-gray-500 text-center mt-2">
-                      Nguồn: Global Innovation Index 2024, WIPO
+                  {/* Simple Comparison Chart */}
+                  <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-200">
+                    <p className="text-sm font-semibold text-gray-700 mb-4 text-center">
+                      Chỉ số Đổi mới Sáng tạo (GII 2024)
                     </p>
-                  </div>
-
-                  {/* Gap Illustration */}
-                  <div className="relative py-6">
-                    <div className="absolute left-0 top-1/2 w-full h-px bg-gray-300"></div>
-                    <div className="relative flex justify-between items-center">
-                      <div className="bg-green-500 text-white p-3 rounded-lg shadow-lg transform -rotate-3">
-                        <div className="text-center">
-                          <div className="text-2xl mb-1">🚀</div>
-                          <div className="text-xs font-bold">AI, IoT</div>
+                    
+                    {/* Singapore Bar */}
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="flex items-center gap-2">
+                          <span className="text-lg">🇸🇬</span>
+                          <span className="text-sm font-medium text-gray-700">Singapore</span>
                         </div>
+                        <span className="text-lg font-bold text-green-600">64.7</span>
                       </div>
-                      
-                      <div className="flex-1 flex items-center justify-center">
-                        <motion.div
-                          animate={{ x: [0, 10, 0] }}
-                          transition={{ duration: 2, repeat: Infinity }}
+                      <div className="h-10 bg-gray-100 rounded-lg relative overflow-hidden">
+                        <motion.div 
+                          initial={{ width: 0 }}
+                          whileInView={{ width: "100%" }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 1, delay: 0.2 }}
+                          className="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-end pr-3"
                         >
-                          <svg className="w-24 h-6 text-red-500" viewBox="0 0 100 20">
-                            <defs>
-                              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                                <polygon points="0 0, 10 3, 0 6" fill="currentColor" />
-                              </marker>
-                            </defs>
-                            <line x1="5" y1="10" x2="85" y2="10" stroke="currentColor" strokeWidth="2" strokeDasharray="5,5" markerEnd="url(#arrowhead)" />
-                            <text x="50" y="8" fontSize="8" fill="currentColor" textAnchor="middle" fontWeight="bold">GAP</text>
-                          </svg>
+                          <span className="text-xs font-bold text-white">Hàng đầu ASEAN</span>
                         </motion.div>
                       </div>
-                      
-                      <div className="bg-orange-500 text-white p-3 rounded-lg shadow-lg transform rotate-3">
+                    </div>
+
+                    {/* Vietnam Bar */}
+                    <div className="mb-3">
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="flex items-center gap-2">
+                          <span className="text-lg">🇻🇳</span>
+                          <span className="text-sm font-medium text-gray-700">Việt Nam</span>
+                        </div>
+                        <span className="text-lg font-bold text-orange-600">36.2</span>
+                      </div>
+                      <div className="h-10 bg-gray-100 rounded-lg relative overflow-hidden">
+                        <motion.div 
+                          initial={{ width: 0 }}
+                          whileInView={{ width: "56%" }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 1, delay: 0.5 }}
+                          className="h-full bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg flex items-center justify-end pr-3"
+                        >
+                          <span className="text-xs font-bold text-white">Hạng 44/133</span>
+                        </motion.div>
+                      </div>
+                    </div>
+
+                    {/* Gap Indicator */}
+                    <div className="bg-red-50 rounded-lg p-3 border border-red-200 mt-4">
+                      <div className="flex items-center justify-center gap-3">
+                        <span className="text-2xl">⚠️</span>
                         <div className="text-center">
-                          <div className="text-2xl mb-1">🏭</div>
-                          <div className="text-xs font-bold">Cơ bản</div>
+                          <p className="text-sm text-gray-600">Khoảng cách cần thu hẹp</p>
+                          <p className="text-2xl font-bold text-red-600">28.5 điểm</p>
+                          <p className="text-xs text-gray-500">(tương đương 44%)</p>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* Stats - Real data */}
-                  <div className="grid grid-cols-3 gap-3 mt-6">
-                    <div className="bg-white rounded-lg p-3 text-center shadow-sm border border-gray-200">
-                      <div className="text-2xl font-bold text-blue-600">#44</div>
-                      <div className="text-xs text-gray-600 mt-1">GII Rank</div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 text-center shadow-sm border border-gray-200">
-                      <div className="text-2xl font-bold text-purple-600">#71</div>
-                      <div className="text-xs text-gray-600 mt-1">E-Gov</div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 text-center shadow-sm border border-gray-200">
-                      <div className="text-2xl font-bold text-orange-600">#2</div>
-                      <div className="text-xs text-gray-600 mt-1">Thu nhập TB</div>
+                  {/* Achievement Cards */}
+                  <div className="space-y-3">
+                    <p className="text-sm font-semibold text-gray-700 text-center">
+                      Vị trí của Việt Nam
+                    </p>
+                    <div className="grid grid-cols-3 gap-2">
+                      <div className="bg-blue-50 rounded-lg p-3 text-center border border-blue-200">
+                        <div className="text-xl font-bold text-blue-600">#44</div>
+                        <div className="text-xs text-gray-600 mt-1">Đổi mới toàn cầu</div>
+                        <div className="text-xs text-gray-500 mt-0.5">(GII 2024)</div>
+                      </div>
+                      <div className="bg-purple-50 rounded-lg p-3 text-center border border-purple-200">
+                        <div className="text-xl font-bold text-purple-600">#71</div>
+                        <div className="text-xs text-gray-600 mt-1">Chính phủ số</div>
+                        <div className="text-xs text-gray-500 mt-0.5">(UN 2024)</div>
+                      </div>
+                      <div className="bg-green-50 rounded-lg p-3 text-center border border-green-200">
+                        <div className="text-xl font-bold text-green-600">#2</div>
+                        <div className="text-xs text-gray-600 mt-1">Nhóm thu nhập TB</div>
+                        <div className="text-xs text-gray-500 mt-0.5">(Sau Ấn Độ)</div>
+                      </div>
                     </div>
                   </div>
 
-                  <p className="text-center text-xs text-gray-500 italic mt-3">
-                    GII 2024 (WIPO), UN E-Gov 2024, Lower-middle income group
-                  </p>
+                  {/* Source */}
+                  <div className="bg-gray-50 rounded-lg p-3 border border-gray-200">
+                    <p className="text-xs text-gray-600 text-center">
+                      <span className="font-semibold">Nguồn:</span> Global Innovation Index 2024 (WIPO), 
+                      UN E-Government Survey 2024
+                    </p>
+                  </div>
                 </div>
               </div>
 
