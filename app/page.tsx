@@ -8,6 +8,7 @@ import ImpactSection from '@/components/sections/ImpactSection'
 import CaseStudiesSection from '@/components/sections/CaseStudiesSection'
 import SolutionsSection from '@/components/sections/SolutionsSection'
 import GameSection from '@/components/sections/GameSection'
+import ReferencesSection from '@/components/sections/ReferencesSection'
 
 export default function Home() {
   return (
@@ -36,6 +37,9 @@ export default function Home() {
 
         {/* Mục 7: Tương tác (Game) */}
         <GameSection />
+
+        {/* References Section */}
+        <ReferencesSection />
 
         {/* AI Appendix Section */}
         <section id="ai-appendix" className="section bg-gradient-to-br from-blue-50 to-purple-50">

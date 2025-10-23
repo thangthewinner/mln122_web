@@ -17,6 +17,7 @@ const Navbar = () => {
     { id: 'case-studies', label: 'Thực trạng', href: '#case-studies' },
     { id: 'solutions', label: 'Giải pháp', href: '#solutions' },
     { id: 'game', label: 'Tương tác', href: '#game' },
+    { id: 'references', label: 'Nguồn', href: '#references' },
     { id: 'conclusion', label: 'Kết luận', href: '#conclusion' },
     { id: 'ai-appendix', label: 'Phụ lục AI', href: '#ai-appendix' },
   ]

@@ -32,7 +32,7 @@ const CaseStudiesSection = () => {
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    Nhà máy sản xuất với độ tự động hóa 90%
+                    Nhà máy sản xuất với độ tự động hóa cao
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
@@ -40,12 +40,12 @@ const CaseStudiesSection = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    Mục tiêu rút ngắn khoảng cách với thế giới
+                    Đầu tư 174 triệu USD vào AI và phần mềm
                   </li>
                 </ul>
               </div>
               <div className="text-sm text-gray-500 italic">
-                Cập nhật: Q4/2024 - Mở rộng thị trường Mỹ và Châu Âu
+                Nguồn: VinFast Press Release, Q4/2024
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@ const CaseStudiesSection = () => {
                 </ul>
               </div>
               <div className="text-sm text-gray-500 italic">
-                Cập nhật: Q1/2025 - 70% SME chưa bắt đầu chuyển đổi số
+                Nguồn: Hiệp hội Dệt may Việt Nam (VITAS), 2024
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@ const CaseStudiesSection = () => {
                 </ul>
               </div>
               <div className="text-sm text-gray-500 italic">
-                Cập nhật: Q1/2025 - Chính phủ hỗ trợ 10,000 tỷ cho nông nghiệp số
+                Nguồn: Bộ Nông nghiệp và PTNT, Chương trình Chuyển đổi số 2024
               </div>
             </div>
           </div>

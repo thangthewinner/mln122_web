@@ -83,7 +83,7 @@ const DefinitionSection = () => {
                       Qua các vùng miền
                     </h4>
                     <p className="text-gray-600">
-                      Thành thị vs nông thôn, доступ đến hạ tầng số và giáo dục
+                      Thành thị vs nông thôn, khả năng tiếp cận hạ tầng số và giáo dục
                     </p>
                   </div>
                 </div>

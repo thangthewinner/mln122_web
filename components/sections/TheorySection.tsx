@@ -13,11 +13,14 @@ const TheorySection = () => {
         <div className="space-y-6">
           <div className="bg-blue-50 border-l-4 border-primary-600 p-6 rounded-lg">
             <h4 className="text-lg font-semibold text-primary-900 mb-3">Định nghĩa cốt lõi</h4>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed mb-3">
               Công nghiệp hóa, hiện đại hóa (CNH, HĐH) là quá trình chuyển đổi căn bản, toàn diện và đồng bộ 
-              các hoạt động kinh tế - xã hội từ sử dụng lao động thủ công predominan sang 
-              lao động cơ giới hóa, hiện đại có trình độ khoa học - công nghệ cao, gắn với công nghiệp hóa, 
-              hiện đại hóa và phát triển bền vững.
+              các hoạt động kinh tế - xã hội từ sử dụng lao động thủ công sang 
+              lao động cơ giới hóa, hiện đại có trình độ khoa học - công nghệ cao, nhằm phát triển 
+              lực lượng sản xuất và hoàn thiện quan hệ sản xuất xã hội chủ nghĩa.
+            </p>
+            <p className="text-sm text-gray-600 italic">
+              📚 Nguồn: Giáo trình Kinh tế Chính trị Mác - Lênin, NXB Chính trị Quốc gia Sự thật, 2023
             </p>
           </div>
           
@@ -52,10 +55,13 @@ const TheorySection = () => {
         <div className="space-y-6">
           <div className="bg-green-50 border-l-4 border-secondary-600 p-6 rounded-lg">
             <h4 className="text-lg font-semibold text-secondary-900 mb-3">Lý luận Mác - Lênin</h4>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-3">
               Theo Mác – Lênin, CNH, HĐH là <strong>tất yếu khách quan</strong> để phát triển Lực lượng sản xuất (LLSX), 
               xây dựng cơ sở vật chất – kỹ thuật cho CNXH. Trong thời đại 4.0, 'đứt gãy công nghệ' 
               chính là thách thức lớn nhất đối với tính tất yếu này.
+            </p>
+            <p className="text-sm text-gray-600 italic">
+              💡 "Lực lượng sản xuất phát triển đến một trình độ nhất định sẽ mâu thuẫn với quan hệ sản xuất hiện có" - K. Marx, Tư bản, tập I
             </p>
           </div>
 

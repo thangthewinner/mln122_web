@@ -82,8 +82,11 @@ const ImpactSection = () => {
                       className="text-green-600 text-gradient"
                       startDelay={500}
                     />
-                    <p className="text-gray-600 mt-4">
+                    <p className="text-gray-600 mt-3">
                       Nhờ tự động hóa và ứng dụng công nghệ trong sản xuất
+                    </p>
+                    <p className="text-xs text-gray-500 mt-2 italic">
+                      Nguồn: McKinsey Global Institute, 2024
                     </p>
                   </div>
                 </div>
@@ -102,8 +105,11 @@ const ImpactSection = () => {
                       className="text-green-600 text-gradient"
                       startDelay={1000}
                     />
-                    <p className="text-gray-600 mt-4">
+                    <p className="text-gray-600 mt-3">
                       Ước tính quy mô kinh tế số Việt Nam năm 2025
+                    </p>
+                    <p className="text-xs text-gray-500 mt-2 italic">
+                      Nguồn: Google, Temasek & Bain - e-Conomy SEA Report 2024
                     </p>
                   </div>
                 </div>
@@ -158,8 +164,11 @@ const ImpactSection = () => {
                       className="text-red-600"
                       startDelay={800}
                     />
-                    <p className="text-gray-600 mt-4">
+                    <p className="text-gray-600 mt-3">
                       Doanh nghiệp vừa và nhỏ đứng ngoài cuộc chơi số
+                    </p>
+                    <p className="text-xs text-gray-500 mt-2 italic">
+                      Nguồn: Cục Tin học hóa - Bộ Thông tin và Truyền thông, 2024
                     </p>
                   </div>
                 </div>
@@ -178,8 +187,11 @@ const ImpactSection = () => {
                       className="text-red-600"
                       startDelay={1200}
                     />
-                    <p className="text-gray-600 mt-4">
+                    <p className="text-gray-600 mt-3">
                       Lao động kỹ năng thấp đối mặt nguy cơ bị thay thế
+                    </p>
+                    <p className="text-xs text-gray-500 mt-2 italic">
+                      Nguồn: ILO - Tương lai việc làm tại Việt Nam, 2024
                     </p>
                   </div>
                 </div>

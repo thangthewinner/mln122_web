@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 interface CounterProps {
@@ -21,27 +21,36 @@ const Counter: React.FC<CounterProps> = ({
   startDelay = 0
 }) => {
   const [count, setCount] = useState(0)
-  const [isVisible, setIsVisible] = useState(false)
-  const ref = React.useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-100px' })
+  const ref = useRef<HTMLDivElement>(null)
+  const isInView = useInView(ref, { once: true, amount: 0.5 })
+  const hasStarted = useRef(false)
 
   useEffect(() => {
-    if (inView && !isVisible) {
-      setIsVisible(true)
+    if (isInView && !hasStarted.current) {
+      hasStarted.current = true
+      
       const timer = setTimeout(() => {
         let startTime: number | null = null
+        
         const animateValue = (currentTime: number) => {
           if (!startTime) startTime = currentTime
-          const progress = Math.min((currentTime - startTime) / duration, 1)
+          const elapsed = currentTime - startTime
+          const progress = Math.min(elapsed / duration, 1)
           
           // Easing function for smooth animation
           const easeOutQuart = 1 - Math.pow(1 - progress, 4)
-          const currentCount = Math.floor(easeOutQuart * end)
+          
+          // Handle decimal numbers properly
+          const currentCount = end % 1 !== 0 
+            ? parseFloat((easeOutQuart * end).toFixed(1))
+            : Math.floor(easeOutQuart * end)
           
           setCount(currentCount)
           
           if (progress < 1) {
             requestAnimationFrame(animateValue)
+          } else {
+            setCount(end) // Ensure we end at exact value
           }
         }
         
@@ -50,20 +59,27 @@ const Counter: React.FC<CounterProps> = ({
 
       return () => clearTimeout(timer)
     }
-  }, [inView, isVisible, end, duration, startDelay])
+  }, [isInView, end, duration, startDelay])
+
+  // Format number based on whether it has decimals
+  const formatNumber = (num: number) => {
+    if (num % 1 !== 0) {
+      return num.toFixed(1)
+    }
+    return Math.round(num).toLocaleString()
+  }
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
-      transition={{ duration: 0.6, delay: startDelay / 1000 }}
-      className={`${className}`}
-    >
-      <span className="text-4xl md:text-5xl lg:text-6xl font-bold tabular-nums">
-        {prefix}{count.toLocaleString()}{suffix}
-      </span>
-    </motion.div>
+    <div ref={ref} className={`${className}`}>
+      <motion.span
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
+        transition={{ duration: 0.5, delay: startDelay / 1000 }}
+        className="text-4xl md:text-5xl lg:text-6xl font-bold tabular-nums inline-block"
+      >
+        {prefix}{formatNumber(count)}{suffix}
+      </motion.span>
+    </div>
   )
 }
 
