@@ -251,7 +251,7 @@ const DefinitionSection = () => {
                 là thách thức lớn nhất đối với quá trình công nghiệp hóa, hiện đại hóa của Việt Nam."
               </blockquote>
               <p className="text-lg text-gray-600 mt-4">
-                — Lăng cảnh Kinh tế Chính trị Mác – Lênin
+                — Lăng cảnh Kinh tế Chính trị Mác – Lênin —
               </p>
             </div>
           </motion.div>
