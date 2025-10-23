@@ -99,19 +99,94 @@ const DefinitionSection = () => {
 
             {/* Visual/Infographic */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8 min-h-[400px] flex items-center justify-center">
-                {/* Placeholder for AI-generated infographic */}
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-primary-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg className="w-16 h-16 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                  <h4 className="text-xl font-semibold text-gray-700 mb-3">
-                    Visual Data Gap
+              <div className="bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-2xl p-8 min-h-[400px] border-2 border-blue-100">
+                {/* Tech Gap Visualization */}
+                <div className="space-y-6">
+                  <h4 className="text-center text-xl font-bold text-gray-800 mb-6">
+                    Khoảng Cách Công Nghệ
                   </h4>
-                  <p className="text-gray-600 max-w-xs mx-auto">
-                    [Infographic sẽ được tạo bởi AI để minh họa khoảng cách công nghệ]
+                  
+                  {/* Gap 1: Countries */}
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between text-sm text-gray-600">
+                      <span className="font-semibold">Quốc gia phát triển</span>
+                      <span className="text-green-600 font-bold">100%</span>
+                    </div>
+                    <div className="h-8 bg-gradient-to-r from-green-400 to-green-500 rounded-full relative overflow-hidden">
+                      <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+                    </div>
+                    
+                    <div className="flex items-center justify-between text-sm text-gray-600 mt-4">
+                      <span className="font-semibold">Việt Nam</span>
+                      <span className="text-orange-600 font-bold">45%</span>
+                    </div>
+                    <div className="h-8 bg-gray-200 rounded-full relative overflow-hidden">
+                      <div className="h-full w-[45%] bg-gradient-to-r from-orange-400 to-orange-500 rounded-full relative">
+                        <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+                      </div>
+                    </div>
+                    <div className="text-center">
+                      <span className="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">
+                        ⚠️ Chênh lệch 55%
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Gap Illustration */}
+                  <div className="relative py-6">
+                    <div className="absolute left-0 top-1/2 w-full h-px bg-gray-300"></div>
+                    <div className="relative flex justify-between items-center">
+                      <div className="bg-green-500 text-white p-3 rounded-lg shadow-lg transform -rotate-3">
+                        <div className="text-center">
+                          <div className="text-2xl mb-1">🚀</div>
+                          <div className="text-xs font-bold">AI, IoT</div>
+                        </div>
+                      </div>
+                      
+                      <div className="flex-1 flex items-center justify-center">
+                        <motion.div
+                          animate={{ x: [0, 10, 0] }}
+                          transition={{ duration: 2, repeat: Infinity }}
+                        >
+                          <svg className="w-24 h-6 text-red-500" viewBox="0 0 100 20">
+                            <defs>
+                              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="currentColor" />
+                              </marker>
+                            </defs>
+                            <line x1="5" y1="10" x2="85" y2="10" stroke="currentColor" strokeWidth="2" strokeDasharray="5,5" markerEnd="url(#arrowhead)" />
+                            <text x="50" y="8" fontSize="8" fill="currentColor" textAnchor="middle" fontWeight="bold">GAP</text>
+                          </svg>
+                        </motion.div>
+                      </div>
+                      
+                      <div className="bg-orange-500 text-white p-3 rounded-lg shadow-lg transform rotate-3">
+                        <div className="text-center">
+                          <div className="text-2xl mb-1">🏭</div>
+                          <div className="text-xs font-bold">Cơ bản</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Stats */}
+                  <div className="grid grid-cols-3 gap-3 mt-6">
+                    <div className="bg-white rounded-lg p-3 text-center shadow-sm border border-gray-200">
+                      <div className="text-2xl font-bold text-blue-600">3x</div>
+                      <div className="text-xs text-gray-600 mt-1">Năng suất</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 text-center shadow-sm border border-gray-200">
+                      <div className="text-2xl font-bold text-purple-600">5x</div>
+                      <div className="text-xs text-gray-600 mt-1">Đầu tư</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 text-center shadow-sm border border-gray-200">
+                      <div className="text-2xl font-bold text-red-600">10x</div>
+                      <div className="text-xs text-gray-600 mt-1">Đổi mới</div>
+                    </div>
+                  </div>
+
+                  <p className="text-center text-sm text-gray-500 italic mt-4">
+                    Chênh lệch công nghệ tạo ra khoảng cách phát triển
                   </p>
                 </div>
               </div>
