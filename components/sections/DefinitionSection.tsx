@@ -106,30 +106,33 @@ const DefinitionSection = () => {
                     Khoảng Cách Công Nghệ
                   </h4>
                   
-                  {/* Gap 1: Countries */}
+                  {/* Gap 1: Innovation Index - Based on GII 2024 */}
                   <div className="space-y-2">
                     <div className="flex items-center justify-between text-sm text-gray-600">
-                      <span className="font-semibold">Quốc gia phát triển</span>
-                      <span className="text-green-600 font-bold">100%</span>
+                      <span className="font-semibold">Singapore (Top ASEAN)</span>
+                      <span className="text-green-600 font-bold">64.7</span>
                     </div>
                     <div className="h-8 bg-gradient-to-r from-green-400 to-green-500 rounded-full relative overflow-hidden">
                       <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
                     </div>
                     
                     <div className="flex items-center justify-between text-sm text-gray-600 mt-4">
-                      <span className="font-semibold">Việt Nam</span>
-                      <span className="text-orange-600 font-bold">45%</span>
+                      <span className="font-semibold">Việt Nam (GII 2024)</span>
+                      <span className="text-orange-600 font-bold">36.2</span>
                     </div>
                     <div className="h-8 bg-gray-200 rounded-full relative overflow-hidden">
-                      <div className="h-full w-[45%] bg-gradient-to-r from-orange-400 to-orange-500 rounded-full relative">
+                      <div className="h-full w-[56%] bg-gradient-to-r from-orange-400 to-orange-500 rounded-full relative">
                         <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
                       </div>
                     </div>
                     <div className="text-center">
                       <span className="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">
-                        ⚠️ Chênh lệch 55%
+                        ⚠️ Chênh lệch 44%
                       </span>
                     </div>
+                    <p className="text-xs text-gray-500 text-center mt-2">
+                      Nguồn: Global Innovation Index 2024, WIPO
+                    </p>
                   </div>
 
                   {/* Gap Illustration */}
@@ -169,24 +172,24 @@ const DefinitionSection = () => {
                     </div>
                   </div>
 
-                  {/* Stats */}
+                  {/* Stats - Real data */}
                   <div className="grid grid-cols-3 gap-3 mt-6">
                     <div className="bg-white rounded-lg p-3 text-center shadow-sm border border-gray-200">
-                      <div className="text-2xl font-bold text-blue-600">3x</div>
-                      <div className="text-xs text-gray-600 mt-1">Năng suất</div>
+                      <div className="text-2xl font-bold text-blue-600">#44</div>
+                      <div className="text-xs text-gray-600 mt-1">GII Rank</div>
                     </div>
                     <div className="bg-white rounded-lg p-3 text-center shadow-sm border border-gray-200">
-                      <div className="text-2xl font-bold text-purple-600">5x</div>
-                      <div className="text-xs text-gray-600 mt-1">Đầu tư</div>
+                      <div className="text-2xl font-bold text-purple-600">#71</div>
+                      <div className="text-xs text-gray-600 mt-1">E-Gov</div>
                     </div>
                     <div className="bg-white rounded-lg p-3 text-center shadow-sm border border-gray-200">
-                      <div className="text-2xl font-bold text-red-600">10x</div>
-                      <div className="text-xs text-gray-600 mt-1">Đổi mới</div>
+                      <div className="text-2xl font-bold text-orange-600">#2</div>
+                      <div className="text-xs text-gray-600 mt-1">Thu nhập TB</div>
                     </div>
                   </div>
 
-                  <p className="text-center text-sm text-gray-500 italic mt-4">
-                    Chênh lệch công nghệ tạo ra khoảng cách phát triển
+                  <p className="text-center text-xs text-gray-500 italic mt-3">
+                    GII 2024 (WIPO), UN E-Gov 2024, Lower-middle income group
                   </p>
                 </div>
               </div>
