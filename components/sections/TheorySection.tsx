@@ -11,8 +11,8 @@ const TheorySection = () => {
       label: 'Khái niệm CNH',
       content: (
         <div className="space-y-6">
-          <div className="bg-blue-50 border-l-4 border-primary-600 p-6 rounded-lg">
-            <h4 className="text-lg font-semibold text-primary-900 mb-3">Định nghĩa cốt lõi</h4>
+          <div className="bg-ocean-50 border-l-4 border-ocean-700 p-6 rounded-lg">
+            <h4 className="text-lg font-semibold text-ocean-900 mb-3">Định nghĩa cốt lõi</h4>
             <p className="text-gray-700 leading-relaxed mb-3">
               Công nghiệp hóa, hiện đại hóa (CNH, HĐH) là quá trình chuyển đổi căn bản, toàn diện và đồng bộ 
               các hoạt động kinh tế - xã hội từ sử dụng lao động thủ công sang 
@@ -53,8 +53,8 @@ const TheorySection = () => {
       label: 'Tính tất yếu',
       content: (
         <div className="space-y-6">
-          <div className="bg-green-50 border-l-4 border-secondary-600 p-6 rounded-lg">
-            <h4 className="text-lg font-semibold text-secondary-900 mb-3">Lý luận Mác - Lênin</h4>
+          <div className="bg-ocean-50 border-l-4 border-ocean-600 p-6 rounded-lg">
+            <h4 className="text-lg font-semibold text-ocean-900 mb-3">Lý luận Mác - Lênin</h4>
             <p className="text-gray-700 leading-relaxed mb-3">
               Theo Mác – Lênin, CNH, HĐH là <strong>tất yếu khách quan</strong> để phát triển Lực lượng sản xuất (LLSX), 
               xây dựng cơ sở vật chất – kỹ thuật cho CNXH. Trong thời đại 4.0, 'đứt gãy công nghệ' 
@@ -110,7 +110,7 @@ const TheorySection = () => {
           <div className="space-y-4">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                <span className="w-10 h-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-3">
+                <span className="w-10 h-10 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center mr-3">
                   1
                 </span>
                 Phát triển Lực lượng sản xuất hiện đại
@@ -125,7 +125,7 @@ const TheorySection = () => {
 
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                <span className="w-10 h-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-3">
+                <span className="w-10 h-10 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center mr-3">
                   2
                 </span>
                 Chuyển dịch cơ cấu kinh tế
@@ -140,7 +140,7 @@ const TheorySection = () => {
 
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                <span className="w-10 h-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-3">
+                <span className="w-10 h-10 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center mr-3">
                   3
                 </span>
                 Phát triển nguồn nhân lực chất lượng cao
@@ -161,8 +161,8 @@ const TheorySection = () => {
       label: 'Mục tiêu',
       content: (
         <div className="space-y-6">
-          <div className="bg-gradient-to-r from-primary-50 to-secondary-50 p-6 rounded-lg border border-primary-200">
-            <h4 className="text-lg font-semibold text-primary-900 mb-4">🎯 Mục tiêu tổng quát</h4>
+          <div className="bg-gradient-to-r from-ocean-50 to-ocean-100 p-6 rounded-lg border border-ocean-200">
+            <h4 className="text-lg font-semibold text-ocean-900 mb-4">🎯 Mục tiêu tổng quát</h4>
             <p className="text-gray-700 leading-relaxed">
               Đến năm 2030, Việt Nam trở thành nước đang phát triển có công nghiệp, hiện đại, 
               đi từ nông thôn lên thành thị; đến năm 2045 trở thành nước phát triển, 
@@ -192,8 +192,8 @@ const TheorySection = () => {
             </div>
           </div>
 
-          <div className="bg-yellow-50 border-l-4 border-accent-600 p-6 rounded-lg">
-            <h5 className="font-semibold text-accent-900 mb-3">⚠️ Thách thức từ đứt gãy công nghệ</h5>
+          <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 rounded-lg">
+            <h5 className="font-semibold text-yellow-900 mb-3">⚠️ Thách thức từ đứt gãy công nghệ</h5>
             <p className="text-gray-700">
               Các mục tiêu này sẽ gặp thách thức lớn từ "đứt gãy công nghệ" - nguy cơ Việt Nam bị bỏ lại phía sau 
               với khoảng cách ngày càng lớn so với các nước phát triển. Cần có giải pháp đột phá để 

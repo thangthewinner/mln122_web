@@ -25,7 +25,7 @@ export default function GameSection() {
 
   return (
     <GameProvider>
-      <section id="game" className="section bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 min-h-screen">
+      <section id="game" className="section bg-gradient-to-br from-ocean-50 via-ocean-100 to-ocean-200 min-h-screen">
         <div className="section-container">
           {currentScreen === 'welcome' && <GameWelcome onStartGame={handleStartGame} />}
           {currentScreen === 'game' && <GameContainer onGameComplete={handleGameComplete} />}

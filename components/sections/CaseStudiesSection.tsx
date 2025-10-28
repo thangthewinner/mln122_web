@@ -10,13 +10,13 @@ const CaseStudiesSection = () => {
     (
       <div key="vinfast" className="bg-white rounded-2xl shadow-xl overflow-hidden">
         <div className="md:flex">
-          <div className="md:w-1/2 bg-gradient-to-br from-blue-500 to-primary-600 p-8 flex items-center justify-center">
+          <div className="md:w-1/2 bg-gradient-to-br from-ocean-700 to-ocean-600 p-8 flex items-center justify-center">
             <div className="text-center text-white">
               <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <div className="text-6xl">🚗</div>
               </div>
               <h3 className="text-3xl font-bold mb-2">VinFast</h3>
-              <p className="text-blue-100">Bước nhảy vọt công nghệ</p>
+              <p className="text-ocean-100">Bước nhảy vọt công nghệ</p>
             </div>
           </div>
           <div className="md:w-1/2 p-8">
@@ -28,18 +28,18 @@ const CaseStudiesSection = () => {
                 VinFast đã thực hiện bước đột phá bằng cách đầu tư mạnh mẽ vào công nghệ sản xuất ô tô điện, 
                 tích hợp AI vào hệ thống autonomous driving và xây dựng nhà máy tự động hóa.
               </p>
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+              <div className="bg-ocean-50 border-l-4 border-ocean-600 p-4 rounded">
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                    <span className="w-2 h-2 bg-ocean-600 rounded-full mr-2"></span>
                     Nhà máy sản xuất với độ tự động hóa cao
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                    <span className="w-2 h-2 bg-ocean-600 rounded-full mr-2"></span>
                     R&D công nghệ xe điện và pin tiên tiến
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                    <span className="w-2 h-2 bg-ocean-600 rounded-full mr-2"></span>
                     Đầu tư 174 triệu USD vào AI và phần mềm
                   </li>
                 </ul>

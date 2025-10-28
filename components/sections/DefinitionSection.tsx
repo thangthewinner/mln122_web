@@ -34,20 +34,20 @@ const DefinitionSection = () => {
           >
             {/* Text Content */}
             <div className="space-y-6">
-              <div className="bg-blue-50 border-l-4 border-primary-500 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-primary-900 mb-4">
+              <div className="bg-ocean-50 border-l-4 border-ocean-600 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-ocean-900 mb-4">
                   Đó là sự chênh lệch đột ngột
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  về <strong className="text-primary-600">khả năng tiếp cận</strong>, 
-                  <strong className="text-primary-600"> ứng dụng</strong> và 
-                  <strong className="text-primary-600"> đổi mới</strong> công nghệ.
+                  về <strong className="text-ocean-700">khả năng tiếp cận</strong>, 
+                  <strong className="text-ocean-700"> ứng dụng</strong> và 
+                  <strong className="text-ocean-700"> đổi mới</strong> công nghệ.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-semibold">
+                  <div className="flex-shrink-0 w-8 h-8 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center font-semibold">
                     1
                   </div>
                   <div>
@@ -61,7 +61,7 @@ const DefinitionSection = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-semibold">
+                  <div className="flex-shrink-0 w-8 h-8 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center font-semibold">
                     2
                   </div>
                   <div>
@@ -75,7 +75,7 @@ const DefinitionSection = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-semibold">
+                  <div className="flex-shrink-0 w-8 h-8 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center font-semibold">
                     3
                   </div>
                   <div>
@@ -214,7 +214,7 @@ const DefinitionSection = () => {
                   repeat: Infinity,
                   ease: 'easeInOut',
                 }}
-                className="absolute -top-4 -left-4 w-20 h-20 bg-primary-100 rounded-lg border-2 border-primary-300 flex items-center justify-center"
+                className="absolute -top-4 -left-4 w-20 h-20 bg-ocean-100 rounded-lg border-2 border-ocean-300 flex items-center justify-center"
               >
                 <span className="text-2xl">🔧</span>
               </motion.div>
@@ -230,7 +230,7 @@ const DefinitionSection = () => {
                   ease: 'easeInOut',
                   delay: 2,
                 }}
-                className="absolute -bottom-4 -right-4 w-16 h-16 bg-accent-100 rounded-full border-2 border-accent-300 flex items-center justify-center"
+                className="absolute -bottom-4 -right-4 w-16 h-16 bg-ocean-200 rounded-full border-2 border-ocean-300 flex items-center justify-center"
               >
                 <span className="text-xl">📱</span>
               </motion.div>
@@ -245,7 +245,7 @@ const DefinitionSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-16 text-center"
           >
-            <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 border border-primary-200">
+            <div className="bg-gradient-to-r from-ocean-50 to-ocean-100 rounded-2xl p-8 border border-ocean-200">
               <blockquote className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-medium italic">
                 "Trong kỷ nguyên số, <span className="text-gradient font-bold">đứt gãy công nghệ</span> 
                 là thách thức lớn nhất đối với quá trình công nghiệp hóa, hiện đại hóa của Việt Nam."

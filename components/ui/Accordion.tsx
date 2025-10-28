@@ -55,7 +55,7 @@ const Accordion: React.FC<AccordionProps> = ({
             {/* Header */}
             <button
               onClick={() => toggleItem(item.id)}
-              className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-inset"
+              className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-ocean-500 focus:ring-inset"
             >
               <div className="flex items-center space-x-3">
                 {item.icon && (

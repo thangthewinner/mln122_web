@@ -12,9 +12,9 @@ const SolutionsSection = () => {
       icon: '👥',
       content: (
         <div className="space-y-4">
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-            <h4 className="font-semibold text-blue-900 mb-2">Nâng cao "nội lực" con người</h4>
-            <p className="text-blue-800">
+          <div className="bg-ocean-50 border-l-4 border-ocean-600 p-4 rounded">
+            <h4 className="font-semibold text-ocean-900 mb-2">Nâng cao "nội lực" con người</h4>
+            <p className="text-ocean-800">
               Then chốt để làm chủ công nghệ, không phải bị công nghệ thay thể. 
               Con người phải là trung tâm của quá trình công nghiệp hóa.
             </p>
@@ -23,7 +23,7 @@ const SolutionsSection = () => {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
-                <span className="w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">1</span>
+                <span className="w-8 h-8 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">1</span>
                 Đào tạo STEM
               </h5>
               <ul className="text-gray-600 space-y-1 text-sm">
@@ -35,7 +35,7 @@ const SolutionsSection = () => {
             
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
-                <span className="w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">2</span>
+                <span className="w-8 h-8 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">2</span>
                 Kỹ năng số
               </h5>
               <ul className="text-gray-600 space-y-1 text-sm">
@@ -47,7 +47,7 @@ const SolutionsSection = () => {
             
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
-                <span className="w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">3</span>
+                <span className="w-8 h-8 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">3</span>
                 Học tập suốt đời
               </h5>
               <ul className="text-gray-600 space-y-1 text-sm">
@@ -59,7 +59,7 @@ const SolutionsSection = () => {
             
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
-                <span className="w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">4</span>
+                <span className="w-8 h-8 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">4</span>
             Đào tạo doanh nghiệp
               </h5>
               <ul className="text-gray-600 space-y-1 text-sm">

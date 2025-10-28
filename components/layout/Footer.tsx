@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer id="conclusion" className="bg-gray-900 text-white py-16">
+    <footer id="conclusion" className="bg-ocean-900 text-white py-16">
       <div className="section-container">
         <div className="text-center space-y-8">
           {/* Main Conclusion Message */}
@@ -14,10 +14,10 @@ const Footer = () => {
               Công nghiệp hóa không phải là "máy móc hóa".
             </h2>
             <h1 className="text-4xl md:text-6xl font-extrabold text-gradient">
-              Công nghiệp hóa là <span className="text-secondary-400">VÌ CON NGƯỜI</span>,
+              Công nghiệp hóa là <span className="text-ocean-400">VÌ CON NGƯỜI</span>,
             </h1>
             <h1 className="text-4xl md:text-6xl font-extrabold text-gradient">
-              lấy <span className="text-primary-400">ĐỔI MỚI SÁNG TẠO</span> làm động lực.
+              lấy <span className="text-ocean-300">ĐỔI MỚI SÁNG TẠO</span> làm động lực.
             </h1>
           </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="pt-8 border-t border-gray-700">
             <Link
               href="#ai-appendix"
-              className="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200 font-semibold"
+              className="inline-flex items-center px-6 py-3 bg-ocean-700 text-white rounded-lg hover:bg-ocean-800 transition-colors duration-200 font-semibold"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />

@@ -119,7 +119,7 @@ const ReferencesSection = () => {
                 className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
               >
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                  <span className="w-8 h-8 bg-ocean-100 text-ocean-700 rounded-full flex items-center justify-center text-sm font-bold mr-3">
                     {idx + 1}
                   </span>
                   {category.category}
@@ -128,7 +128,7 @@ const ReferencesSection = () => {
                   {category.items.map((item, itemIdx) => (
                     <div
                       key={itemIdx}
-                      className="border-l-2 border-gray-200 pl-4 py-2 hover:border-primary-500 transition-colors"
+                      className="border-l-2 border-gray-200 pl-4 py-2 hover:border-ocean-600 transition-colors"
                     >
                       <div className="flex items-start justify-between">
                         <div className="flex-1">

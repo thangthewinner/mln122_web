@@ -5,6 +5,26 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Ocean Theme Colors */
+    --color-navy-deep: #001D39;
+    --color-ocean-dark: #0A4174;
+    --color-steel-blue: #49769F;
+    --color-teal-blue: #4E8EA2;
+    --color-sky-blue: #6EA2B3;
+    --color-azure-bright: #7BBDE8;
+    --color-cloud-light: #BDD8E9;
+    
+    /* Semantic Colors */
+    --color-primary: var(--color-teal-blue);
+    --color-primary-dark: var(--color-ocean-dark);
+    --color-primary-light: var(--color-azure-bright);
+    --color-background: #ffffff;
+    --color-background-alt: var(--color-cloud-light);
+    --color-text: var(--color-navy-deep);
+    --color-text-muted: var(--color-steel-blue);
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -36,22 +56,22 @@
 @layer components {
   /* Button styles */
   .btn-primary {
-    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold;
-    @apply hover:bg-primary-700 transition-colors duration-200;
-    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    @apply bg-ocean-700 text-white px-6 py-3 rounded-lg font-semibold;
+    @apply hover:bg-ocean-800 transition-colors duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-ocean-500 focus:ring-offset-2;
   }
 
   .btn-secondary {
-    @apply bg-secondary-600 text-white px-6 py-3 rounded-lg font-semibold;
-    @apply hover:bg-secondary-700 transition-colors duration-200;
-    @apply focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2;
+    @apply bg-ocean-300 text-white px-6 py-3 rounded-lg font-semibold;
+    @apply hover:bg-ocean-400 transition-colors duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-ocean-300 focus:ring-offset-2;
   }
 
   .btn-outline {
-    @apply bg-transparent border-2 border-primary-600 text-primary-600;
+    @apply bg-transparent border-2 border-ocean-600 text-ocean-600;
     @apply px-6 py-3 rounded-lg font-semibold;
-    @apply hover:bg-primary-600 hover:text-white transition-colors duration-200;
-    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    @apply hover:bg-ocean-600 hover:text-white transition-colors duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-ocean-500 focus:ring-offset-2;
   }
 
   /* Section styles */
@@ -65,7 +85,7 @@
 
   /* Text styles */
   .text-gradient {
-    @apply bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-ocean-700 to-ocean-300 bg-clip-text text-transparent;
   }
 
   /* Animation utilities */

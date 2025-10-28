@@ -8,46 +8,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
-        },
-        secondary: {
-          50: '#ecfdf5',
-          100: '#d1fae5',
-          200: '#a7f3d0',
-          300: '#6ee7b7',
-          400: '#34d399',
-          500: '#10b981',
-          600: '#059669',
-          700: '#047857',
-          800: '#065f46',
-          900: '#064e3b',
-          950: '#022c22',
-        },
-        accent: {
-          50: '#fff7ed',
-          100: '#ffedd5',
-          200: '#fed7aa',
-          300: '#fdba74',
-          400: '#fb923c',
-          500: '#f97316',
-          600: '#ea580c',
-          700: '#c2410c',
-          800: '#9a3412',
-          900: '#7c2d12',
-          950: '#431407',
+        // Ocean Blue Theme - Professional technology color palette
+        ocean: {
+          50: '#f0f7fb',   // Lighter than Cloud Light
+          100: '#BDD8E9',  // Cloud Light - backgrounds, subtle elements
+          200: '#9fc9df',  // Between Cloud and Azure
+          300: '#7BBDE8',  // Azure Bright - CTAs, active states
+          400: '#6EA2B3',  // Sky Blue - hover states
+          500: '#4E8EA2',  // Teal Blue - primary color
+          600: '#49769F',  // Steel Blue - interactive elements
+          700: '#0A4174',  // Ocean Dark - headers, primary buttons
+          800: '#07315a',  // Between Ocean and Navy
+          900: '#001D39',  // Navy Deep - hero background, footer
+          950: '#001429',  // Darker than Navy
         },
         danger: '#dc2626',
+        success: '#059669',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

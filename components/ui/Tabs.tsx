@@ -29,7 +29,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, defaultTab, className = '' }) => {
               onClick={() => setActiveTab(tab.id)}
               className={`relative py-3 px-1 md:px-4 text-sm md:text-base font-medium whitespace-nowrap transition-colors duration-200 ${
                 activeTab === tab.id
-                  ? 'text-primary-600'
+                  ? 'text-ocean-700'
                   : 'text-gray-600 hover:text-gray-800'
               }`}
             >
@@ -39,7 +39,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, defaultTab, className = '' }) => {
               {activeTab === tab.id && (
                 <motion.div
                   layoutId="activeTabIndicator"
-                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600"
+                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-ocean-700"
                   initial={false}
                   transition={{
                     type: 'spring',

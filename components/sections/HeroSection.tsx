@@ -17,7 +17,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-secondary-800 to-accent-900">
+      <div className="absolute inset-0 bg-gradient-to-br from-ocean-900 via-ocean-800 to-ocean-700">
         {/* Background pattern */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzR2LTRoLTJ2NGgtNHYyaDR2NGgydi00aDR2LTJoLTR6bTAtMzBWMGgtMnY0aC00djJoNHY0aDJWNmg0VjRoLTR6TTYgMzR2LTRINHY0SDB2Mmg0djRoMnYtNGg0djItSDZ6TTYgNFYwSDR2NEgwdjJoNHY0aDJWNmg0VjRINGg2eiIvPjwvZz48L2c+PC9zdmc+')]" />
@@ -42,7 +42,7 @@ const HeroSection = () => {
           >
             ĐỨT GÃY
             <br />
-            <span className="text-gradient from-accent-400 to-yellow-400">CÔNG NGHỆ</span>
+            <span className="bg-gradient-to-r from-ocean-300 to-ocean-400 bg-clip-text text-transparent">CÔNG NGHỆ</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -87,7 +87,7 @@ const HeroSection = () => {
         >
           <motion.a
             href="#theory"
-            className="text-white hover:text-accent-300 transition-colors duration-200 inline-block"
+            className="text-white hover:text-ocean-300 transition-colors duration-200 inline-block"
             animate={{
               y: [0, 10, 0],
             }}
@@ -111,7 +111,7 @@ const HeroSection = () => {
       {/* Floating elements for visual interest */}
       <div className="absolute top-1/4 left-10 hidden lg:block">
         <motion.div
-          className="w-16 h-16 bg-primary-500/20 rounded-full border border-primary-400/30"
+          className="w-16 h-16 bg-ocean-500/20 rounded-full border border-ocean-400/30"
           animate={{
             y: [0, -20, 0],
             rotate: [0, 180, 360],
@@ -127,7 +127,7 @@ const HeroSection = () => {
 
       <div className="absolute bottom-1/4 right-10 hidden lg:block">
         <motion.div
-          className="w-20 h-20 bg-accent-500/20 rounded-lg border border-accent-400/30"
+          className="w-20 h-20 bg-ocean-300/20 rounded-lg border border-ocean-300/30"
           animate={{
             y: [0, 15, 0],
             rotate: [0, -90, 0],
@@ -144,7 +144,7 @@ const HeroSection = () => {
 
       <div className="absolute top-1/3 right-1/4 hidden xl:block">
         <motion.div
-          className="w-12 h-12 bg-secondary-500/20 rounded-full border border-secondary-400/30"
+          className="w-12 h-12 bg-ocean-600/20 rounded-full border border-ocean-600/30"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.8, 0.3],
