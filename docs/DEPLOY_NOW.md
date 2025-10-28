@@ -145,7 +145,7 @@ Subject: [MLN122] Website Bài Thuyết Trình - Đứt Gãy Công Nghệ
 
 Thưa thầy/cô,
 
-Em là [Tên] - Nhóm MLN122.
+Em là [Tên] - Nhóm DOVAT.
 
 Em xin gửi link website bài thuyết trình:
 🔗 https://mln122-web.vercel.app
@@ -161,7 +161,7 @@ Em xin gửi link website bài thuyết trình:
 Website hoạt động tốt nhất trên Chrome/Firefox.
 
 Em xin cảm ơn thầy/cô!
-Nhóm MLN122
+Nhóm DOVAT
 ```
 
 ---

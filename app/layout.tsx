@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: 'Đứt Gãy Công Nghệ - Website Phân tích',
   description: 'Website phân tích về đứt gãy công nghệ và con đường công nghiệp hóa, hiện đại hóa tại Việt Nam',
   keywords: ['đứt gãy công nghệ', 'công nghiệp hóa', 'hiện đại hóa', 'Việt Nam', 'cách mạng 4.0'],
-  authors: [{ name: 'NHÓM MLN122' }],
-  creator: 'NHÓM MLN122',
-  publisher: 'NHÓM MLN122',
+  authors: [{ name: 'NHÓM DOVAT' }],
+  creator: 'NHÓM DOVAT',
+  publisher: 'NHÓM DOVAT',
   openGraph: {
     title: 'Đứt Gãy Công Nghệ - Website Phân tích',
     description: 'Website phân tích về đứt gãy công nghệ và con đường công nghiệp hóa, hiện đại hóa tại Việt Nam',

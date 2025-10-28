@@ -56,7 +56,7 @@ export default function Home() {
                     🔍 Minh bạch (Transparency)
                   </h3>
                   <p className="text-blue-800">
-                    Toàn bộ nội dung được hỗ trợ bởi AI (ChatGPT 4.0) với sự giám sát và chỉnh sửa của con người. 
+                    Toàn bộ nội dung được hỗ trợ bởi AI (ChatGPT, Claude) với sự giám sát và chỉnh sửa của con người. 
                     Công cụ AI được sử dụng để tạo dự thảo ban đầu, sau đó được đội ngũ xem xét và chỉnh sửa kỹ lưỡng.
                   </p>
                 </div>
@@ -97,7 +97,7 @@ export default function Home() {
 
               <div className="mt-8 text-center text-gray-600">
                 <p className="text-sm">
-                  <strong>Nhóm MLN122</strong> cam kết tuân thủ các nguyên tắc sử dụng AI có trách nhiệm 
+                  <strong>Nhóm DOVAT</strong> cam kết tuân thủ các nguyên tắc sử dụng AI có trách nhiệm 
                   trong môi trường học thuật.
                 </p>
               </div>

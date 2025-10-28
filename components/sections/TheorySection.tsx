@@ -61,7 +61,7 @@ const TheorySection = () => {
               chính là thách thức lớn nhất đối với tính tất yếu này.
             </p>
             <p className="text-sm text-gray-600 italic">
-              💡 "Lực lượng sản xuất phát triển đến một trình độ nhất định sẽ mâu thuẫn với quan hệ sản xuất hiện có" - K. Marx, Tư bản, tập I
+              💡 "Lực lượng sản xuất phát triển đến một trình độ nhất định sẽ mâu thuẫn với quan hệ sản xuất hiện có" - K.&nbsp;Marx, Tư&nbsp;bản, tập&nbsp;I
             </p>
           </div>
 
@@ -218,7 +218,11 @@ const TheorySection = () => {
           {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Lăng kính <span className="text-gradient">Kinh tế Chính trị Mác – Lênin</span>
+              Lăng kính{' '}
+              <span className="text-gradient">
+                Kinh tế Chính trị{' '}
+                <span className="whitespace-nowrap">Mác – Lênin</span>
+              </span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
               Những vấn đề thực tiễn trên được soi chiếu như thế nào qua lý luận? 

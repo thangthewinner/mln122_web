@@ -342,10 +342,10 @@ MIT License - xem file [LICENSE](LICENSE) để biết thêm chi tiết.
 
 ## 👥 Team
 
-- **Group:** NHÓM MLN122
+- **Group:** NHÓM DOVAT
 - **Project:** Học phần Kinh tế Chính trị Mác – Lênin
 - **Contact:** Faculty contact information
 
 ---
 
-**© 2025 NHÓM MLN122. Được phát triển cho mục đích học thuật.**
+**© 2025 NHÓM DOVAT. Được phát triển cho mục đích học thuật.**

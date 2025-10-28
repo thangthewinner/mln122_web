@@ -9,14 +9,14 @@ const Footer = () => {
       <div className="section-container">
         <div className="text-center space-y-8">
           {/* Main Conclusion Message */}
-          <div className="space-y-4">
+          <div className="space-y-4 py-2">
             <h2 className="text-3xl md:text-4xl font-bold">
               Công nghiệp hóa không phải là "máy móc hóa".
             </h2>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gradient">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-gradient leading-tight md:leading-snug">
               Công nghiệp hóa là <span className="text-ocean-400">VÌ CON NGƯỜI</span>,
             </h1>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gradient">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-gradient leading-tight md:leading-snug">
               lấy <span className="text-ocean-300">ĐỔI MỚI SÁNG TẠO</span> làm động lực.
             </h1>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="pt-8 text-gray-400">
-            <p>© 2025 | Dự án học phần Kinh tế Chính trị Mác – Lênin | Thực hiện bởi: NHÓM MLN122</p>
+            <p>© 2025 | Dự án học phần Kinh tế Chính trị Mác – Lênin | Thực hiện bởi: NHÓM DOVAT</p>
           </div>
         </div>
       </div>

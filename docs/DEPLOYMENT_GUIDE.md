@@ -437,7 +437,7 @@ Subject: [MLN122] Link Website Bài Thuyết Trình
 
 Thưa thầy/cô,
 
-Em là [Họ tên] - NHÓM MLN122.
+Em là [Họ tên] - NHÓM DOVAT.
 
 Em xin gửi thầy/cô link website bài thuyết trình về đề tài 
 "Đứt Gãy Công Nghệ và Con Đường CNH, HĐH tại Việt Nam":

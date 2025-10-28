@@ -85,7 +85,7 @@ Vercel sẽ:
 ```
 Thầy/cô ơi,
 Em gửi link: https://mln122-web.vercel.app
-Nhóm MLN122
+Nhóm DOVAT
 ```
 
 ---

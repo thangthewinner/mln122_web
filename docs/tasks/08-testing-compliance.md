@@ -140,7 +140,7 @@ describe('Complete Presentation Flow', () => {
 **AI Usage Inventory:**
 ```
 Content Type | AI Tool | Purpose | Verification Status
-Text content | ChatGPT 4.0 | Draft generation | Human-reviewed
+Text content | ChatGPT, Claude | Draft generation | Human-reviewed
 Images | DALL-E 3 | Infographics | Human-edited
 Animations | - | Manual implementation | N/A
 Code | GitHub Copilot | Development assistance | Human-reviewed

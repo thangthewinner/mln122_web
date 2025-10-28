@@ -196,7 +196,7 @@ Nội dung:
 Thời lượng: ~15 phút
 
 Trân trọng,
-Nhóm MLN122
+Nhóm DOVAT
 ```
 
 ---
