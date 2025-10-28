@@ -228,7 +228,7 @@ const ImpactSection = () => {
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-200">
               <p className="text-xl md:text-2xl text-gray-800 leading-relaxed italic">
-                "Thách thức lớn nhất của Việt Nam là <span className="font-bold text-ocean-700">rút ngắn khoảng cách công nghệ</span> 
+                "Thách thức lớn nhất của Việt Nam là <span className="font-bold text-ocean-700">rút ngắn khoảng cách công nghệ </span> 
                 để biến cơ hội thành lợi thế cạnh tranh trong kỷ nguyên 4.0"
               </p>
             </div>

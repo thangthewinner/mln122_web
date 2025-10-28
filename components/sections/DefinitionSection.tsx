@@ -247,7 +247,7 @@ const DefinitionSection = () => {
           >
             <div className="bg-gradient-to-r from-ocean-50 to-ocean-100 rounded-2xl p-8 border border-ocean-200">
               <blockquote className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-medium italic">
-                "Trong kỷ nguyên số, <span className="text-gradient font-bold">đứt gãy công nghệ</span> 
+                "Trong kỷ nguyên số, <span className="text-gradient font-bold">đứt gãy công nghệ </span> 
                 là thách thức lớn nhất đối với quá trình công nghiệp hóa, hiện đại hóa của Việt Nam."
               </blockquote>
               <p className="text-lg text-gray-600 mt-4">
