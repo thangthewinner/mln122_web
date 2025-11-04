@@ -70,91 +70,189 @@ const ImpactSection = () => {
 
               <div className="space-y-8">
                 {/* Productivity Growth */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-green-100">
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-green-700 mb-4">
+                <motion.div 
+                  className="relative bg-white rounded-2xl p-8 overflow-hidden
+                    transition-all duration-300 ease-out
+                    hover:shadow-2xl hover:-translate-y-2
+                    border border-green-100 hover:border-green-200
+                    group"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  {/* Hover gradient background */}
+                  <div className="absolute inset-0 bg-gradient-to-br 
+                    from-green-50/50 via-transparent to-emerald-50/50
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  {/* Top accent line */}
+                  <div className="absolute top-0 left-0 right-0 h-1 
+                    bg-gradient-to-r from-green-500 to-emerald-500
+                    transform scale-x-0 group-hover:scale-x-100
+                    transition-transform duration-500 origin-left" />
+                  
+                  <div className="relative z-10 text-center">
+                    <h4 className="text-xl font-bold text-green-700 mb-6">
                       Năng suất lao động tăng vọt
                     </h4>
-                    <Counter
-                      end={150}
-                      prefix="+"
-                      suffix="%"
-                      duration={2500}
-                      className="text-green-600 text-gradient"
-                      startDelay={500}
-                    />
-                    <p className="text-gray-600 mt-3">
-                      Nhờ tự động hóa và ứng dụng công nghệ trong sản xuất
+                    
+                    {/* Enhanced counter */}
+                    <div className="py-6 mb-4">
+                      <Counter
+                        end={150}
+                        prefix="+"
+                        suffix="%"
+                        duration={2500}
+                        className="text-6xl font-black tracking-tight leading-tight
+                          bg-gradient-to-br from-green-600 via-green-500 to-emerald-600
+                          bg-clip-text text-transparent"
+                        startDelay={500}
+                      />
+                    </div>
+                    
+                    <p className="text-gray-600 leading-relaxed mb-3">
+                      Nhờ tự động hóa và ứng dụng công nghệ trong{' '}
+                      <span className="whitespace-nowrap">sản xuất</span>
                     </p>
-                    <p className="text-xs text-gray-500 mt-2 italic">
+                    <p className="text-xs text-gray-500 italic">
                       Nguồn: McKinsey Global Institute, 2024
                     </p>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Digital Economy */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-green-100">
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-green-700 mb-4">
+                <motion.div 
+                  className="relative bg-white rounded-2xl p-8 overflow-hidden
+                    transition-all duration-300 ease-out
+                    hover:shadow-2xl hover:-translate-y-2
+                    border border-green-100 hover:border-green-200
+                    group"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br 
+                    from-green-50/50 via-transparent to-emerald-50/50
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  <div className="absolute top-0 left-0 right-0 h-1 
+                    bg-gradient-to-r from-green-500 to-emerald-500
+                    transform scale-x-0 group-hover:scale-x-100
+                    transition-transform duration-500 origin-left" />
+                  
+                  <div className="relative z-10 text-center">
+                    <h4 className="text-xl font-bold text-green-700 mb-6">
                       Quy mô kinh tế số
                     </h4>
-                    <Counter
-                      end={45}
-                      prefix="$ "
-                      suffix=" tỷ USD"
-                      duration={2500}
-                      className="text-green-600 text-gradient"
-                      startDelay={1000}
-                    />
-                    <p className="text-gray-600 mt-3">
+                    
+                    <div className="py-6 mb-4">
+                      <Counter
+                        end={45}
+                        prefix="$ "
+                        suffix=" tỷ USD"
+                        duration={2500}
+                        className="text-5xl font-black tracking-tight leading-tight
+                          bg-gradient-to-br from-green-600 via-green-500 to-emerald-600
+                          bg-clip-text text-transparent"
+                        startDelay={1000}
+                      />
+                    </div>
+                    
+                    <p className="text-gray-600 leading-relaxed mb-3">
                       Ước tính quy mô kinh tế số Việt Nam năm 2025
                     </p>
-                    <p className="text-xs text-gray-500 mt-2 italic">
+                    <p className="text-xs text-gray-500 italic">
                       Nguồn: Google, Temasek & Bain - e-Conomy SEA Report 2024
                     </p>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Fintech Adoption */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-green-100">
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-green-700 mb-4">
+                <motion.div 
+                  className="relative bg-white rounded-2xl p-8 overflow-hidden
+                    transition-all duration-300 ease-out
+                    hover:shadow-2xl hover:-translate-y-2
+                    border border-green-100 hover:border-green-200
+                    group"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br 
+                    from-green-50/50 via-transparent to-emerald-50/50
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  <div className="absolute top-0 left-0 right-0 h-1 
+                    bg-gradient-to-r from-green-500 to-emerald-500
+                    transform scale-x-0 group-hover:scale-x-100
+                    transition-transform duration-500 origin-left" />
+                  
+                  <div className="relative z-10 text-center">
+                    <h4 className="text-xl font-bold text-green-700 mb-6">
                       Fintech - Thanh toán số
                     </h4>
-                    <Counter
-                      end={80}
-                      suffix="%"
-                      duration={2500}
-                      className="text-green-600"
-                      startDelay={1500}
-                    />
-                    <p className="text-gray-600 mt-3">
+                    
+                    <div className="py-6 mb-4">
+                      <Counter
+                        end={80}
+                        suffix="%"
+                        duration={2500}
+                        className="text-6xl font-black tracking-tight leading-tight
+                          bg-gradient-to-br from-green-600 via-green-500 to-emerald-600
+                          bg-clip-text text-transparent"
+                        startDelay={1500}
+                      />
+                    </div>
+                    
+                    <p className="text-gray-600 leading-relaxed mb-3">
                       Dân số sử dụng thanh toán không dùng tiền mặt
                     </p>
-                    <p className="text-xs text-gray-500 mt-2 italic">
+                    <p className="text-xs text-gray-500 italic">
                       Nguồn: Ngân hàng Nhà nước Việt Nam, 2024
                     </p>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Innovation Benefits */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-green-100">
-                  <div className="flex items-center space-x-4">
+                <motion.div 
+                  className="relative bg-white rounded-2xl p-8 overflow-hidden
+                    transition-all duration-300 ease-out
+                    hover:shadow-2xl hover:-translate-y-2
+                    border border-green-100 hover:border-green-200
+                    group"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br 
+                    from-green-50/50 via-transparent to-emerald-50/50
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  <div className="absolute top-0 left-0 right-0 h-1 
+                    bg-gradient-to-r from-green-500 to-emerald-500
+                    transform scale-x-0 group-hover:scale-x-100
+                    transition-transform duration-500 origin-left" />
+                  
+                  <div className="relative z-10 flex items-center space-x-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center">
-                        💡
+                      <div className="relative w-16 h-16">
+                        <div className="absolute inset-0 bg-gradient-to-br 
+                          from-green-400 to-green-600 rounded-2xl blur-lg 
+                          opacity-40 group-hover:opacity-60 transition-opacity" />
+                        <div className="relative w-full h-full bg-gradient-to-br 
+                          from-green-500 to-green-600 rounded-2xl
+                          flex items-center justify-center text-3xl
+                          transform group-hover:rotate-12 transition-transform duration-300">
+                          💡
+                        </div>
                       </div>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-green-700">
+                      <h4 className="text-xl font-bold text-green-700 mb-2">
                         Thúc đẩy đổi mới sáng tạo
                       </h4>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 leading-relaxed">
                         Kiến tạo mô hình kinh tế tri thức dựa trên AI, IoT, Big Data
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
 
@@ -175,92 +273,176 @@ const ImpactSection = () => {
 
               <div className="space-y-8">
                 {/* Job Displacement */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-red-100">
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-red-700 mb-4">
+                <motion.div 
+                  className="relative bg-white rounded-2xl p-8 overflow-hidden
+                    transition-all duration-300 ease-out
+                    hover:shadow-2xl hover:-translate-y-2
+                    border border-red-100 hover:border-red-200
+                    group"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br 
+                    from-red-50/50 via-transparent to-orange-50/50
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  <div className="absolute top-0 left-0 right-0 h-1 
+                    bg-gradient-to-r from-red-500 to-orange-500
+                    transform scale-x-0 group-hover:scale-x-100
+                    transition-transform duration-500 origin-left" />
+                  
+                  <div className="relative z-10 text-center">
+                    <h4 className="text-xl font-bold text-red-700 mb-6">
                       Nguy cơ mất việc làm
                     </h4>
-                    <Counter
-                      end={1.2}
-                      prefix=""
-                      suffix=" triệu"
-                      duration={2500}
-                      className="text-red-600"
-                      startDelay={1200}
-                    />
-                    <p className="text-gray-600 mt-3">
+                    
+                    <div className="py-6 mb-4">
+                      <Counter
+                        end={1.2}
+                        prefix=""
+                        suffix=" triệu"
+                        duration={2500}
+                        className="text-5xl font-black tracking-tight leading-tight
+                          bg-gradient-to-br from-red-600 via-red-500 to-orange-600
+                          bg-clip-text text-transparent"
+                        startDelay={1200}
+                      />
+                    </div>
+                    
+                    <p className="text-gray-600 leading-relaxed mb-3">
                       Lao động kỹ năng thấp đối mặt nguy cơ bị thay thế
                     </p>
-                    <p className="text-xs text-gray-500 mt-2 italic">
+                    <p className="text-xs text-gray-500 italic">
                       Nguồn: ILO - Tương lai việc làm tại Việt Nam, 2024
                     </p>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Technology Localization */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-red-100">
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-red-700 mb-4">
+                <motion.div 
+                  className="relative bg-white rounded-2xl p-8 overflow-hidden
+                    transition-all duration-300 ease-out
+                    hover:shadow-2xl hover:-translate-y-2
+                    border border-red-100 hover:border-red-200
+                    group"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br 
+                    from-red-50/50 via-transparent to-orange-50/50
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute top-0 left-0 right-0 h-1 
+                    bg-gradient-to-r from-red-500 to-orange-500
+                    transform scale-x-0 group-hover:scale-x-100
+                    transition-transform duration-500 origin-left" />
+                  <div className="relative z-10 text-center">
+                    <h4 className="text-xl font-bold text-red-700 mb-6">
                       Tỷ lệ nội địa hóa công nghệ thấp
                     </h4>
-                    <Counter
-                      end={10}
-                      suffix="%"
-                      duration={2500}
-                      className="text-red-600"
-                      startDelay={1600}
-                    />
-                    <p className="text-gray-600 mt-3">
+                    <div className="py-6 mb-4">
+                      <Counter
+                        end={10}
+                        suffix="%"
+                        duration={2500}
+                        className="text-6xl font-black tracking-tight leading-tight
+                          bg-gradient-to-br from-red-600 via-red-500 to-orange-600
+                          bg-clip-text text-transparent"
+                        startDelay={1600}
+                      />
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-3">
                       Tỷ lệ nội địa hóa trong công nghiệp{' '}
                       <span className="whitespace-nowrap">chế tạo và điện tử</span>
                     </p>
-                    <p className="text-xs text-gray-500 mt-2 italic">
+                    <p className="text-xs text-gray-500 italic">
                       Nguồn: Báo Đại Đoàn Kết & Báo Đầu Tư, 2024
                     </p>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Digital Skills Gap */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-red-100">
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-red-700 mb-4">
+                <motion.div 
+                  className="relative bg-white rounded-2xl p-8 overflow-hidden
+                    transition-all duration-300 ease-out
+                    hover:shadow-2xl hover:-translate-y-2
+                    border border-red-100 hover:border-red-200
+                    group"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br 
+                    from-red-50/50 via-transparent to-orange-50/50
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute top-0 left-0 right-0 h-1 
+                    bg-gradient-to-r from-red-500 to-orange-500
+                    transform scale-x-0 group-hover:scale-x-100
+                    transition-transform duration-500 origin-left" />
+                  <div className="relative z-10 text-center">
+                    <h4 className="text-xl font-bold text-red-700 mb-6">
                       Khoảng cách kỹ năng số
                     </h4>
-                    <Counter
-                      end={70}
-                      suffix="%"
-                      duration={2500}
-                      className="text-red-600"
-                      startDelay={2000}
-                    />
-                    <p className="text-gray-600 mt-3">
+                    <div className="py-6 mb-4">
+                      <Counter
+                        end={70}
+                        suffix="%"
+                        duration={2500}
+                        className="text-6xl font-black tracking-tight leading-tight
+                          bg-gradient-to-br from-red-600 via-red-500 to-orange-600
+                          bg-clip-text text-transparent"
+                        startDelay={2000}
+                      />
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-3">
                       Lực lượng lao động thiếu đào tạo{' '}
                       <span className="whitespace-nowrap">kỹ năng số</span>
                     </p>
-                    <p className="text-xs text-gray-500 mt-2 italic">
+                    <p className="text-xs text-gray-500 italic">
                       Nguồn: Lexica News & Bộ TT&TT, 2024
                     </p>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Digital Divide */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-red-100">
-                  <div className="flex items-center space-x-4">
+                <motion.div 
+                  className="relative bg-white rounded-2xl p-8 overflow-hidden
+                    transition-all duration-300 ease-out
+                    hover:shadow-2xl hover:-translate-y-2
+                    border border-red-100 hover:border-red-200
+                    group"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br 
+                    from-red-50/50 via-transparent to-orange-50/50
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute top-0 left-0 right-0 h-1 
+                    bg-gradient-to-r from-red-500 to-orange-500
+                    transform scale-x-0 group-hover:scale-x-100
+                    transition-transform duration-500 origin-left" />
+                  <div className="relative z-10 flex items-center space-x-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center">
-                        📊
+                      <div className="relative w-16 h-16">
+                        <div className="absolute inset-0 bg-gradient-to-br 
+                          from-red-400 to-red-600 rounded-2xl blur-lg 
+                          opacity-40 group-hover:opacity-60 transition-opacity" />
+                        <div className="relative w-full h-full bg-gradient-to-br 
+                          from-red-500 to-red-600 rounded-2xl
+                          flex items-center justify-center text-3xl
+                          transform group-hover:rotate-12 transition-transform duration-300">
+                          📊
+                        </div>
                       </div>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-red-700">
+                      <h4 className="text-xl font-bold text-red-700 mb-2">
                         Gia tăng bất bình đẳng
                       </h4>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 leading-relaxed">
                         Khoảng cách giàu nghèo và phụ thuộc công nghệ nước ngoài
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
           </motion.div>

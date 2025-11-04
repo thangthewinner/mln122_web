@@ -59,8 +59,7 @@ export default function GameWelcome({ onStartGame }: GameWelcomeProps) {
         Bạn là Thủ tướng trẻ của Việt Nam năm 2025.
         <br />
         <span className="font-semibold text-gray-800">
-          Nhiệm vụ: Xây dựng đất nước tiến lên công nghiệp hóa, hiện đại hóa trong{' '}
-          <span className="whitespace-nowrap">20 năm</span>.
+          Nhiệm vụ: Xây dựng đất nước tiến lên công nghiệp hóa, hiện đại hóa trong 20 năm.
         </span>
       </motion.p>
 

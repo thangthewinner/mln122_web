@@ -2,43 +2,59 @@
 
 Tài liệu dự án "Đứt Gãy Công Nghệ và Con Đường CNH, HĐH tại Việt Nam"
 
-## 📁 Cấu trúc Documentation
+---
 
-### 🎯 Core Documentation
+## 📂 Folder Structure
+
+### 🎯 `core/` - Core Documentation
 Tài liệu cốt lõi về dự án:
 - **[Product Requirements (PRD)](./core/prd.md)** - Yêu cầu sản phẩm, mục tiêu, và rubric
 - **[Architecture](./core/architecture.md)** - Kiến trúc kỹ thuật và tech stack
 - **[Content Specification](./core/content.md)** - Nội dung chi tiết từng section
 
-### 📖 Guides
+### 📖 `guides/` - User & Developer Guides
 Hướng dẫn sử dụng và phát triển:
 - **[Deployment Guide](./guides/deployment.md)** - Hướng dẫn deploy lên Vercel/production
 - **[Testing Guide](./guides/testing.md)** - Hướng dẫn testing và quality assurance
 - **[Game Play Guide](./guides/game-play.md)** - Hướng dẫn chơi game tương tác
+- `vercel-deploy-notes.txt` - Vercel-specific notes
 
-### 🔧 Implementation Notes
-Ghi chú quá trình thực hiện:
-- **[Game Implementation Summary](./implementation/game-summary.md)** - Tổng kết implementation game section
-- **[Content Review](./implementation/content-review.md)** - Đánh giá và cải thiện content
+### 🔧 `implementation/` - Implementation Notes
+Ghi chú quá trình thực hiện và fixes:
+- **[Game Summary](./implementation/game-summary.md)** - Game implementation summary
+- **[Content Review](./implementation/content-review.md)** - Content review notes
+- **[Task 12 Implementation](./implementation/IMPLEMENTATION_SUMMARY.md)** - Negative impacts implementation
+- **[Line Breaking Fixes](./implementation/LINE_BREAKING_FIXES.md)** - Typography fixes Round 1
+- **[Line Breaking Round 2](./implementation/LINE_BREAKING_FIXES_ROUND2.md)** - Typography fixes Round 2
 
-### 🐛 Troubleshooting
-Giải quyết các vấn đề đã gặp:
-- **[Counter Fix](./troubleshooting/counter-fix.md)** - Fix lỗi counter animation
-- **[Vercel Error Fix](./troubleshooting/vercel-error-fix.md)** - Fix lỗi deployment Vercel
+### 📋 `tasks/` - Task Documentation
+Detailed task breakdowns (01-12):
+- **[Task 01-11](./tasks/)** - Original project tasks
+- **[Task 12](./tasks/12-content-major-update.md)** - Major content update from instructor feedback
 
-### 📋 Tasks Breakdown
-Chi tiết breakdown tasks:
-- **[01 - Overview](./tasks/01-overview.md)** - Tổng quan tasks
-- **[02 - Frontend Tasks](./tasks/02-frontend-tasks.md)** - Tasks frontend
-- **[03 - Backend Tasks](./tasks/03-backend-tasks.md)** - Tasks backend
-- **[04 - UI/UX Tasks](./tasks/04-ui-ux-tasks.md)** - Tasks UI/UX
-- **[05 - Content Integration](./tasks/05-content-integration.md)** - Tasks content
-- **[06 - Interactive Features](./tasks/06-interactive-features.md)** - Tasks tương tác
-- **[07 - Deployment Infrastructure](./tasks/07-deployment-infrastructure.md)** - Tasks deployment
-- **[08 - Testing & Compliance](./tasks/08-testing-compliance.md)** - Tasks testing
-- **[09 - Game Integration](./tasks/09-game-integration.md)** - Tasks game
-- **[10 - Color Palette Update](./tasks/10-color-palette-update.md)** - Tasks color
-- **[11 - UI Fixes](./tasks/11-ui-fixes.md)** - Tasks UI fixes
+### 🐛 `troubleshooting/` - Issue Resolution
+Problem-solving documentation:
+- **[Counter Fix](./troubleshooting/counter-fix.md)** - Counter animation fixes
+- **[Vercel Error Fix](./troubleshooting/vercel-error-fix.md)** - Vercel deployment issues
+
+### 🎨 `ui-enhancements/` - UI/UX Improvements
+Complete UI enhancement documentation:
+- **[UI Audit Report](./ui-enhancements/UI_AUDIT_REPORT.md)** - Initial audit findings
+- **[UI Enhancement Proposal](./ui-enhancements/UI_ENHANCEMENT_PROPOSAL.md)** - Comprehensive proposal (600+ lines)
+- **[Implementation Progress](./ui-enhancements/UI_ENHANCEMENT_IMPLEMENTATION_PROGRESS.md)** - Detailed progress tracking
+- **[Implementation Complete](./ui-enhancements/UI_IMPLEMENTATION_COMPLETE.md)** - Final summary
+- **[Impact Card Reorder](./ui-enhancements/IMPACT_REORDER.md)** - Symmetry improvements
+- **[Counter Clipping Fix](./ui-enhancements/FIXED_COUNTER_CLIPPING.md)** - Text rendering fixes
+- **[Uniform Cards Fix](./ui-enhancements/UNIFORM_CARDS_FIX.md)** - Card sizing fixes
+- **[Blur Removal](./ui-enhancements/REMOVED_BLUR_BACKGROUNDS.md)** - Blur background removal
+
+### 🔬 `research/` - Research & Data
+Academic research and statistics:
+- **[Negative Impacts Research](./research/negative-impacts-research.md)** - Research for 10% & 70% statistics with sources
+
+### 📦 `archive/` - Historical Documents
+Original requirements and references:
+- **[Update_1.md](./archive/Update_1.md)** - Task 12 original requirements from instructor
 
 ---
 

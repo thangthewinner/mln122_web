@@ -184,6 +184,12 @@ const ReferencesSection = () => {
             </ul>
           </motion.div>
 
+          {/* Citation Style Note */}
+          <div className="mt-8 text-center text-sm text-gray-500">
+            <p>
+              📖 Hệ thống trích dẫn: APA Style (American Psychological Association)
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

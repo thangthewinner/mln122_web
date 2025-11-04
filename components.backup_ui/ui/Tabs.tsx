@@ -21,46 +21,33 @@ const Tabs: React.FC<TabsProps> = ({ tabs, defaultTab, className = '' }) => {
   return (
     <div className={`w-full ${className}`}>
       {/* Tab Navigation */}
-      <div className="border-b border-gray-200 mb-8">
-        <nav className="flex space-x-2 md:space-x-6 overflow-x-auto pb-2 scrollbar-hide">
+      <div className="border-b border-gray-200 mb-6">
+        <nav className="flex space-x-2 md:space-x-8 overflow-x-auto pb-2">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`relative py-4 px-2 md:px-6 text-sm md:text-base font-semibold whitespace-nowrap
-                transition-all duration-300 group
-                ${
-                  activeTab === tab.id
-                    ? 'text-ocean-700'
-                    : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50 rounded-t-lg'
-                }`}
+              className={`relative py-3 px-1 md:px-4 text-sm md:text-base font-medium whitespace-nowrap transition-colors duration-200 ${
+                activeTab === tab.id
+                  ? 'text-ocean-700'
+                  : 'text-gray-600 hover:text-gray-800'
+              }`}
             >
               {tab.label}
               
-              {/* Active indicator - animated underline with gradient */}
+              {/* Active indicator */}
               {activeTab === tab.id && (
                 <motion.div
                   layoutId="activeTabIndicator"
-                  className="absolute bottom-0 left-0 right-0 h-1 
-                    bg-gradient-to-r from-ocean-700 to-ocean-500 rounded-full"
+                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-ocean-700"
                   initial={false}
                   transition={{
                     type: 'spring',
-                    stiffness: 380,
+                    stiffness: 500,
                     damping: 30,
                   }}
                 />
               )}
-              
-              {/* Hover indicator */}
-              <div className={`absolute bottom-0 left-0 right-0 h-1 
-                bg-gradient-to-r from-ocean-300 to-ocean-400 rounded-full
-                transition-opacity duration-300
-                ${activeTab === tab.id 
-                  ? 'opacity-0' 
-                  : 'opacity-0 group-hover:opacity-40'
-                }`} 
-              />
             </button>
           ))}
         </nav>

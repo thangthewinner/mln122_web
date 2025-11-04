@@ -66,31 +66,17 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="mt-16 max-w-4xl mx-auto"
           >
-            <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-10 
-              border border-white/20 shadow-2xl overflow-hidden
-              hover:bg-white/15 transition-colors duration-300 group">
-              
-              {/* Animated gradient background */}
-              <div className="absolute inset-0 opacity-30">
-                <div className="absolute inset-0 bg-gradient-to-br 
-                  from-ocean-300/20 via-transparent to-ocean-500/20
-                  animate-gradient" />
-              </div>
-              
-              {/* Content */}
-              <div className="relative z-10">
-                <h3 className="text-xl md:text-2xl font-semibold mb-4 flex items-center gap-2">
-                  <span className="text-3xl transform group-hover:scale-110 transition-transform duration-300">✨</span>
-                  <span>Câu hỏi kiến tạo</span>
-                </h3>
-                <p className="text-lg md:text-xl text-gray-100 leading-relaxed italic">
-                  "Cách mạng{' '}<span className="whitespace-nowrap">4.0</span> mở ra cơ hội, nhưng cũng đào sâu khoảng cách.{' '}
-                  Việt Nam sẽ làm gì để vượt qua hố sâu{' '}
-                  <span className="whitespace-nowrap">công nghệ</span>, thực hiện{' '}
-                  <span className="whitespace-nowrap">CNH, HĐH</span> theo định hướng{' '}
-                  <span className="whitespace-nowrap">xã hội chủ nghĩa</span>?"
-                </p>
-              </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+              <h3 className="text-xl md:text-2xl font-medium mb-4">
+                <span className="text-yellow-400">✨</span> Câu hỏi kiến tạo
+              </h3>
+              <p className="text-lg md:text-xl text-gray-100 leading-relaxed italic">
+                "Cách mạng{' '}<span className="whitespace-nowrap">4.0</span> mở ra cơ hội, nhưng cũng đào sâu khoảng cách.{' '}
+                Việt Nam sẽ làm gì để vượt qua hố sâu{' '}
+                <span className="whitespace-nowrap">công nghệ</span>, thực hiện{' '}
+                <span className="whitespace-nowrap">CNH, HĐH</span> theo định hướng{' '}
+                <span className="whitespace-nowrap">xã hội chủ nghĩa</span>?"
+              </p>
             </div>
           </motion.div>
         )}
