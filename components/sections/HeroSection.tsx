@@ -71,8 +71,11 @@ const HeroSection = () => {
                 <span className="text-yellow-400">✨</span> Câu hỏi kiến tạo
               </h3>
               <p className="text-lg md:text-xl text-gray-100 leading-relaxed italic">
-                "Cách mạng 4.0 mở ra cơ hội, nhưng cũng đào sâu khoảng cách. 
-                Việt Nam sẽ làm gì để vượt qua hố sâu công nghệ, thực hiện CNH, HĐH theo định hướng xã hội chủ nghĩa?"
+                "Cách mạng{' '}<span className="whitespace-nowrap">4.0</span> mở ra cơ hội, nhưng cũng đào sâu khoảng cách.{' '}
+                Việt Nam sẽ làm gì để vượt qua hố sâu{' '}
+                <span className="whitespace-nowrap">công nghệ</span>, thực hiện{' '}
+                <span className="whitespace-nowrap">CNH, HĐH</span> theo định hướng{' '}
+                <span className="whitespace-nowrap">xã hội chủ nghĩa</span>?"
               </p>
             </div>
           </motion.div>

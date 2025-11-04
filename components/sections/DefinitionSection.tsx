@@ -40,8 +40,9 @@ const DefinitionSection = () => {
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   về <strong className="text-ocean-700">khả năng tiếp cận</strong>, 
-                  <strong className="text-ocean-700"> ứng dụng</strong> và 
-                  <strong className="text-ocean-700"> đổi mới</strong> công nghệ.
+                  <strong className="text-ocean-700"> ứng dụng</strong> và{' '}
+                  <strong className="text-ocean-700">đổi mới{' '}
+                  <span className="whitespace-nowrap">công nghệ</span></strong>.
                 </p>
               </div>
 
@@ -69,7 +70,8 @@ const DefinitionSection = () => {
                       Qua các doanh nghiệp
                     </h4>
                     <p className="text-gray-600">
-                      Doanh nghiệp lớn vs SME, khả năng đầu tư công nghệ cao
+                      Doanh nghiệp lớn vs SME, khả năng đầu tư{' '}
+                      <span className="whitespace-nowrap">công nghệ cao</span>
                     </p>
                   </div>
                 </div>
@@ -92,7 +94,8 @@ const DefinitionSection = () => {
               {/* Key Message */}
               <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-lg p-6">
                 <p className="text-lg font-medium text-orange-900 leading-relaxed">
-                  Nó không chỉ là "chậm hơn", mà là <strong>"bị bỏ lại phía sau"</strong> trong cuộc đua phát triển.
+                  Nó không chỉ là "chậm hơn", mà là{' '}
+                  <strong className="whitespace-nowrap">"bị bỏ lại phía sau"</strong> trong cuộc đua phát triển.
                 </p>
               </div>
             </div>
@@ -196,8 +199,8 @@ const DefinitionSection = () => {
                   {/* Source */}
                   <div className="bg-gray-50 rounded-lg p-3 border border-gray-200">
                     <p className="text-xs text-gray-600 text-center">
-                      <span className="font-semibold">Nguồn:</span> Global Innovation Index 2024 (WIPO), 
-                      UN E-Government Survey 2024
+                      <span className="font-semibold">Nguồn:</span> Global Innovation Index 2024 (WIPO),{' '}
+                      <span className="whitespace-nowrap">UN E-Government Survey 2024</span>
                     </p>
                   </div>
                 </div>
@@ -247,8 +250,10 @@ const DefinitionSection = () => {
           >
             <div className="bg-gradient-to-r from-ocean-50 to-ocean-100 rounded-2xl p-8 border border-ocean-200">
               <blockquote className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-medium italic">
-                "Trong kỷ nguyên số, <span className="text-gradient font-bold">đứt gãy công nghệ </span> 
-                là thách thức lớn nhất đối với quá trình công nghiệp hóa, hiện đại hóa của Việt Nam."
+                "Trong kỷ nguyên số, <span className="text-gradient font-bold">đứt gãy{' '}
+                <span className="whitespace-nowrap">công nghệ</span></span>{' '}
+                là thách thức lớn nhất đối với quá trình công nghiệp hóa, hiện đại hóa của{' '}
+                <span className="whitespace-nowrap">Việt Nam</span>."
               </blockquote>
               <p className="text-lg text-gray-600 mt-4">
                 — Lăng cảnh Kinh tế Chính trị Mác – Lênin —

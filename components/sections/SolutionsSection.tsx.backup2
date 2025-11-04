@@ -15,9 +15,8 @@ const SolutionsSection = () => {
           <div className="bg-ocean-50 border-l-4 border-ocean-600 p-4 rounded">
             <h4 className="font-semibold text-ocean-900 mb-2">Nâng cao "nội lực" con người</h4>
             <p className="text-ocean-800">
-              Then chốt để làm chủ <span className="whitespace-nowrap">công nghệ</span>, không phải bị công nghệ thay thế.{' '}
-              Con người phải là trung tâm của quá trình{' '}
-              <span className="whitespace-nowrap">công nghiệp hóa</span>.
+              Then chốt để làm chủ công nghệ, không phải bị công nghệ thay thể. 
+              Con người phải là trung tâm của quá trình công nghiệp hóa.
             </p>
           </div>
           
@@ -129,8 +128,7 @@ const SolutionsSection = () => {
           <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
             <h4 className="font-semibold text-green-900 mb-2">Cầu nối công nghệ cho khu vực nông thôn</h4>
             <p className="text-green-800">
-              Cần các chính sách "cầu nối" để khu vực nông thôn không bị bỏ lại phía sau trong quá trình{' '}
-              <span className="whitespace-nowrap">chuyển đổi số</span>.
+              Cần các chính sách "cầu nối" để khu vực nông thôn không bị bỏ lại phía sau trong quá trình chuyển đổi số.
             </p>
           </div>
           
@@ -173,13 +171,11 @@ const SolutionsSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Định hướng cho Việt Nam:{' '}
-              <span className="text-gradient whitespace-nowrap">Sáng tạo & Bền vững</span>
+              Định hướng cho Việt Nam: <span className="text-gradient">Sáng tạo & Bền vững</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              Từ kết quả phân tích, chúng ta thấy rõ sự giằng xé giữa hiệu quả (LLSX) và con người (QHSX).{' '}
-              Định hướng <span className="whitespace-nowrap">CNH, HĐH</span> của Việt Nam phải giải quyết được{' '}
-              <span className="whitespace-nowrap">mâu thuẫn này</span>.
+              Từ kết quả phân tích, chúng ta thấy rõ sự giằng xé giữa hiệu quả (LLSX) và con người (QHSX). 
+              Định hướng CNH, HĐH của Việt Nam phải giải quyết được mâu thuẫn này.
             </p>
           </div>
 
@@ -210,8 +206,7 @@ const SolutionsSection = () => {
                     <span className="text-2xl mr-2">👥</span> Con người
                   </h4>
                   <p className="text-sm opacity-90">
-                    Đặt con người vào trung tâm của quá trình{' '}
-                    <span className="whitespace-nowrap">chuyển đổi số</span>
+                    Đặt con người vào trung tâm của quá trình chuyển đổi số
                   </p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">

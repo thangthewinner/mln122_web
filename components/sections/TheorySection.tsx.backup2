@@ -237,8 +237,7 @@ const TheorySection = () => {
               <li className="flex items-start">
                 <span className="text-ocean-600 mr-2 font-bold">•</span>
                 <span className="leading-relaxed">
-                  Sẵn sàng thích ứng với tác động của bối cảnh cách mạng công nghiệp lần thứ 4{' '}
-                  <span className="whitespace-nowrap">(4.0)</span>
+                  Sẵn sàng thích ứng với tác động của bối cảnh cách mạng công nghiệp lần thứ 4 (4.0)
                 </span>
               </li>
             </ul>

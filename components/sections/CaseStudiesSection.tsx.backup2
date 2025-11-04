@@ -87,8 +87,7 @@ const CaseStudiesSection = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-green-500 rounded-full mr-2 mt-1.5"></span>
-                    <span>Blockchain đảm bảo bảo mật và giảm chi phí{' '}
-                    <span className="whitespace-nowrap">giao dịch</span></span>
+                    <span>Blockchain đảm bảo bảo mật và giảm chi phí giao dịch</span>
                   </li>
                 </ul>
               </div>
@@ -165,9 +164,7 @@ const CaseStudiesSection = () => {
               Câu chuyện <span className="text-gradient">thực tiễn</span> tại Việt Nam
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              Minh chứng rõ nét về "đứt gãy <span className="whitespace-nowrap">công nghệ</span>" trong bối cảnh phát triển{' '}
-              <span className="whitespace-nowrap">kinh tế - xã hội</span>{' '}
-              <span className="whitespace-nowrap">Việt Nam</span>
+              Minh chứng rõ nét về "đứt gãy công nghệ" trong bối cảnh phát triển kinh tế - xã hội Việt Nam
             </p>
           </div>
 

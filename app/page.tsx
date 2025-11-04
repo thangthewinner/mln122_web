@@ -53,7 +53,7 @@ export default function Home() {
                 {/* Transparency */}
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
                   <h3 className="text-lg font-semibold text-blue-900 mb-2">
-                    🔍 Minh bạch (Transparency)
+                    🔍 Minh bạch
                   </h3>
                   <p className="text-blue-800">
                     Toàn bộ nội dung được hỗ trợ bởi AI (ChatGPT, Claude) với sự giám sát và chỉnh sửa của con người. 
@@ -64,7 +64,7 @@ export default function Home() {
                 {/* Responsibility */}
                 <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg">
                   <h3 className="text-lg font-semibold text-green-900 mb-2">
-                    ⚖️ Trách nhiệm (Responsibility)
+                    ⚖️ Trách nhiệm
                   </h3>
                   <p className="text-green-800">
                     Con người chịu trách nhiệm cuối cùng về tính chính xác và học thuật của nội dung. 
@@ -75,7 +75,7 @@ export default function Home() {
                 {/* Creativity */}
                 <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg">
                   <h3 className="text-lg font-semibold text-purple-900 mb-2">
-                    🎨 Sáng tạo (Creativity)
+                    🎨 Sáng tạo
                   </h3>
                   <p className="text-purple-800">
                     AI hỗ trợ trong việc tạo ra các ý tưởng sáng tạo về hình thức trình bày, 
@@ -86,7 +86,7 @@ export default function Home() {
                 {/* Integrity */}
                 <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-lg">
                   <h3 className="text-lg font-semibold text-orange-900 mb-2">
-                    🤝 Liêm chính (Integrity)
+                    🤝 Liêm chính
                   </h3>
                   <p className="text-orange-800">
                     Không có nội dung AI nào được sử dụng mà không có sự xem xét và chỉnh sửa của con người. 
