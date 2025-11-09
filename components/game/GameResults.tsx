@@ -152,22 +152,50 @@ export default function GameResults({ onPlayAgain }: GameResultsProps) {
         transition={{ delay: 0.6 }}
         className="bg-white rounded-2xl p-8 shadow-xl mb-8"
       >
-        <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+        <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
           🏆 Thành tựu: {unlockedCount}/12
         </h3>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {achievements.map((achievement) => (
             <div
               key={achievement.id}
-              className={`text-center p-4 rounded-xl transition-all ${
-                achievement.unlocked ? 'bg-yellow-50 scale-110' : 'bg-gray-100 opacity-50'
+              className={`p-4 rounded-xl transition-all group relative cursor-pointer ${
+                achievement.unlocked 
+                  ? 'bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-300 shadow-lg hover:shadow-2xl hover:scale-105' 
+                  : 'bg-gray-100 opacity-70 border-2 border-gray-300 hover:opacity-90 hover:border-blue-400 hover:shadow-lg'
               }`}
             >
-              <div className="text-4xl mb-2">{achievement.icon}</div>
-              <div className="text-xs font-semibold">{achievement.name}</div>
+              <div className="text-center">
+                <div className="text-5xl mb-2">{achievement.icon}</div>
+                <div className="text-sm font-bold text-gray-900 mb-1">{achievement.name}</div>
+                <div className="text-xs text-gray-600">{achievement.description}</div>
+              </div>
+              
+              {/* Hover Tooltip */}
+              <div className={`absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 p-3 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10 ${
+                achievement.unlocked 
+                  ? 'bg-green-600 text-white' 
+                  : 'bg-blue-600 text-white'
+              }`}>
+                {/* Arrow */}
+                <div className={`absolute top-full left-1/2 transform -translate-x-1/2 -mt-1 border-8 border-transparent ${
+                  achievement.unlocked ? 'border-t-green-600' : 'border-t-blue-600'
+                }`}></div>
+                
+                {/* Content */}
+                <div className="text-xs font-semibold mb-2">
+                  {achievement.unlocked ? '✅ Đã hoàn thành!' : '💡 Cách đạt được:'}
+                </div>
+                <div className="text-xs leading-relaxed">
+                  {achievement.hint}
+                </div>
+              </div>
             </div>
           ))}
         </div>
+        <p className="text-sm text-gray-600 text-center mt-6 italic">
+          Hover vào từng thành tựu để xem chi tiết cách đạt được
+        </p>
       </motion.div>
 
       <motion.div
