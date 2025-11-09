@@ -107,6 +107,20 @@ export default function NetworkBuilder({ onComplete }: NetworkBuilderProps) {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
+      <div className="bg-gradient-to-r from-green-50 via-teal-50 to-blue-50 rounded-xl p-6 border-l-4 border-green-600 mb-6">
+        <h4 className="text-lg font-bold text-gray-900 mb-2">📅 Bối cảnh: 2035-2040 - Khoảng cách số</h4>
+        <p className="text-gray-700 mb-3">
+          Các thành phố lớn đã hiện đại hóa, nhưng nông thôn và vùng sâu vùng xa vẫn thiếu hạ tầng số. 
+          <strong> Khoảng cách giữa đô thị và nông thôn ngày càng lớn.</strong>
+        </p>
+        <div className="bg-white/60 rounded p-3">
+          <p className="text-sm text-gray-800">
+            💡 <strong>Thách thức:</strong> Làm sao để đưa nông thôn vào kỷ nguyên số? Đầu tư vào vùng nào trước? 
+            Có nên kết nối cả 3 miền để không ai bị bỏ lại phía sau? "Công nghệ chỉ có ý nghĩa khi phục vụ mọi người."
+          </p>
+        </div>
+      </div>
+
       <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-6">
         <div className="grid grid-cols-3 gap-4 text-center">
           <div>
@@ -208,11 +222,28 @@ export default function NetworkBuilder({ onComplete }: NetworkBuilderProps) {
         </motion.div>
       )}
 
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
-        <p className="text-sm text-yellow-800">
-          💡 <strong>Mẹo:</strong> Kết nối cả 3 miền sẽ mang lại lợi ích lớn nhất về mặt xã hội
-          và công nghệ. Đừng để khoảng cách số tồn tại!
-        </p>
+      <div className="space-y-3">
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
+          <p className="text-sm text-blue-800">
+            📖 <strong>Thực trạng Việt Nam:</strong> Năm 2023, tỷ lệ dân số nông thôn dùng Internet mới đạt 65%, 
+            trong khi thành phố là 95%. Miền Trung và Tây Nguyên là những nơi khó khăn nhất do địa hình và kinh tế.
+          </p>
+        </div>
+        
+        <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded-lg">
+          <p className="text-sm text-green-800">
+            🌏 <strong>Bài học từ Trung Quốc:</strong> Dự án "Xóa nghèo kỹ thuật số" kết nối 100% làng xã, 
+            giúp nông dân bán hàng online, học tập từ xa. Kết quả: Thu nhập nông thôn tăng 40% trong 5 năm.
+          </p>
+        </div>
+
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
+          <p className="text-sm text-yellow-800">
+            💡 <strong>Chiến lược gợi ý:</strong> Kết nối cả 3 miền mang lại lợi ích toàn diện - không chỉ công nghệ 
+            mà còn xã hội (giảm bất bình đẳng) và kinh tế (mở rộng thị trường). Chi phí cao nhưng xứng đáng! 
+            <strong>Đừng để ai bị bỏ lại phía sau.</strong>
+          </p>
+        </div>
       </div>
 
       <button

@@ -156,24 +156,24 @@ export const GRADE_THRESHOLDS: Record<string, number> = {
 
 export const STAT_COLORS = {
   economy: {
-    bg: 'bg-blue-500',
-    text: 'text-blue-700',
-    light: 'bg-blue-100',
+    bg: '#3b82f6',      // blue-500
+    text: '#1d4ed8',    // blue-700
+    light: '#dbeafe',   // blue-100
   },
   social: {
-    bg: 'bg-green-500',
-    text: 'text-green-700',
-    light: 'bg-green-100',
+    bg: '#22c55e',      // green-500
+    text: '#15803d',    // green-700
+    light: '#dcfce7',   // green-100
   },
   technology: {
-    bg: 'bg-purple-500',
-    text: 'text-purple-700',
-    light: 'bg-purple-100',
+    bg: '#a855f7',      // purple-500
+    text: '#7e22ce',    // purple-700
+    light: '#f3e8ff',   // purple-100
   },
   environment: {
-    bg: 'bg-emerald-500',
-    text: 'text-emerald-700',
-    light: 'bg-emerald-100',
+    bg: '#10b981',      // emerald-500
+    text: '#047857',    // emerald-700
+    light: '#d1fae5',   // emerald-100
   },
 };
 

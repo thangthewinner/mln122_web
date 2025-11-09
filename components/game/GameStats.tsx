@@ -22,18 +22,22 @@ export default function GameStats({ stats }: GameStatsProps) {
             key={statKey}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className={`${colors.light} rounded-xl p-4 shadow-md`}
+            className="rounded-xl p-4 shadow-md"
+            style={{ backgroundColor: colors.light }}
           >
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm font-semibold text-gray-700">{label}</span>
-              <span className={`text-lg font-bold ${colors.text}`}>{Math.round(value)}%</span>
+              <span className="text-lg font-bold" style={{ color: colors.text }}>
+                {Math.round(value)}%
+              </span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: `${value}%` }}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className={`h-full ${colors.bg} rounded-full`}
+                className="h-full rounded-full"
+                style={{ backgroundColor: colors.bg }}
               />
             </div>
           </motion.div>

@@ -120,6 +120,20 @@ export default function SustainabilityBalance({ onComplete }: SustainabilityBala
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
+      <div className="bg-gradient-to-r from-purple-50 via-pink-50 to-red-50 rounded-xl p-6 border-l-4 border-purple-600 mb-6">
+        <h4 className="text-lg font-bold text-gray-900 mb-2">📅 Bối cảnh: 2040-2045 - Thử thách 2045</h4>
+        <p className="text-gray-700 mb-3">
+          Việt Nam đã phát triển mạnh mẽ và đứng trước ngưỡng trở thành quốc gia phát triển. 
+          <strong> Nhưng biến đổi khí hậu và ô nhiễm đang đe dọa thành quả.</strong>
+        </p>
+        <div className="bg-white/60 rounded p-3">
+          <p className="text-sm text-gray-800">
+            💡 <strong>Thách thức cuối cùng:</strong> Làm sao để duy trì tăng trưởng kinh tế mà vẫn bảo vệ môi trường? 
+            Có phải phát triển bền vững là con đường duy nhất? "Phát triển bền vững là CNH thế kỷ 21."
+          </p>
+        </div>
+      </div>
+
       <div className="bg-gradient-to-r from-blue-50 via-purple-50 to-green-50 rounded-xl p-6">
         <h4 className="text-lg font-semibold text-gray-800 text-center mb-4">
           ⚖️ Cân bằng phát triển
@@ -225,11 +239,36 @@ export default function SustainabilityBalance({ onComplete }: SustainabilityBala
         </motion.div>
       )}
 
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
-        <p className="text-sm text-yellow-800">
-          💡 <strong>Mẹo:</strong> Giữ cân bằng ở mức 40-60 và chọn nhiều chính sách bổ trợ sẽ
-          mang lại kết quả tốt nhất. Kinh tế tuần hoàn là lựa chọn thông minh!
-        </p>
+      <div className="space-y-3">
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
+          <p className="text-sm text-blue-800">
+            📖 <strong>Mục tiêu Việt Nam 2045:</strong> "Trở thành quốc gia phát triển, thu nhập cao" 
+            (Nghị quyết 29-NQ/TW). Nhưng không thể đánh đổi môi trường! ĐBSCL đang chìm 1cm/năm, 
+            Hà Nội ô nhiễm top 10 thế giới.
+          </p>
+        </div>
+        
+        <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded-lg">
+          <p className="text-sm text-green-800">
+            🌍 <strong>Mô hình quốc tế:</strong> Đan Mạch - tăng trưởng 80% nhưng giảm phát thải 50% (1990-2020). 
+            Costa Rica - 99% năng lượng tái tạo vẫn tăng GDP 4%/năm. <strong>Phát triển xanh = Phát triển thông minh!</strong>
+          </p>
+        </div>
+
+        <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-lg">
+          <p className="text-sm text-purple-800">
+            ⚡ <strong>4 chính sách then chốt:</strong> Thuế carbon (giảm ô nhiễm), Trợ cấp năng lượng xanh 
+            (tạo công ăn việc làm), Kinh tế tuần hoàn (tiết kiệm tài nguyên), Bảo tồn thiên nhiên (du lịch sinh thái).
+          </p>
+        </div>
+
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
+          <p className="text-sm text-yellow-800">
+            💡 <strong>Chiến lược tối ưu:</strong> Giữ cân bằng 40-60 (ưu tiên môi trường một chút, 50-60) 
+            và chọn 3-4 chính sách bổ trợ. <strong>Kinh tế tuần hoàn</strong> mang lại lợi ích cho cả 2 phía. 
+            Đây là thử thách cuối - hãy hoàn thành sứ mệnh Việt Nam 2045!
+          </p>
+        </div>
       </div>
 
       <button

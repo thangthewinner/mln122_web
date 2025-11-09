@@ -82,6 +82,20 @@ export default function BudgetAllocation({ onComplete }: BudgetAllocationProps) 
       animate={{ opacity: 1 }}
       className="space-y-6"
     >
+      <div className="bg-gradient-to-r from-red-50 via-orange-50 to-yellow-50 rounded-xl p-6 border-l-4 border-red-500 mb-6">
+        <h4 className="text-lg font-bold text-gray-900 mb-2">📅 Bối cảnh: 2025-2030 - Hậu COVID</h4>
+        <p className="text-gray-700 mb-3">
+          Kinh tế Việt Nam đang phục hồi sau đại dịch. Công nghệ tự động hóa phát triển nhanh, 
+          đe dọa hàng triệu việc làm. <strong>Bạn cần cân bằng giữa tăng trưởng kinh tế và bảo vệ lao động.</strong>
+        </p>
+        <div className="bg-white/60 rounded p-3">
+          <p className="text-sm text-gray-800">
+            💡 <strong>Thách thức:</strong> Làm sao để ứng dụng công nghệ mà không bỏ rơi người lao động? 
+            Đào tạo nghề mới hay tăng phúc lợi xã hội? Đầu tư R&D hay tự động hóa ngay?
+          </p>
+        </div>
+      </div>
+
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 mb-6">
         <div className="flex justify-between items-center">
           <span className="text-lg font-semibold text-gray-700">Tổng phân bổ:</span>
@@ -141,11 +155,22 @@ export default function BudgetAllocation({ onComplete }: BudgetAllocationProps) 
         })}
       </div>
 
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
-        <p className="text-sm text-yellow-800">
-          💡 <strong>Mẹo:</strong> Cân bằng giữa các lĩnh vực để đạt điểm cao. Đầu tư vào đào tạo
-          và nghiên cứu sẽ mang lại lợi ích dài hạn.
-        </p>
+      <div className="space-y-3">
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
+          <p className="text-sm text-blue-800">
+            📖 <strong>Bài học từ lịch sử:</strong> Các nước như Hàn Quốc, Singapore thành công nhờ 
+            đầu tư mạnh vào <strong>đào tạo nhân lực</strong> (25-30%) song song với <strong>R&D</strong> (15-20%) 
+            thay vì chỉ tập trung tự động hóa.
+          </p>
+        </div>
+        
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
+          <p className="text-sm text-yellow-800">
+            💡 <strong>Chiến lược gợi ý:</strong> Cân bằng là chìa khóa! Đầu tư vào đào tạo ({'>'}20%) 
+            và nghiên cứu ({'>'}15%) mang lại lợi ích dài hạn. Phúc lợi xã hội ({'>'}20%) giúp người dân yên tâm 
+            trong chuyển đổi. Tránh tự động hóa quá nhanh ({'<'}40%).
+          </p>
+        </div>
       </div>
 
       <button

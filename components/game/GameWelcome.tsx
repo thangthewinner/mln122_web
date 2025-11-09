@@ -133,33 +133,114 @@ export default function GameWelcome({ onStartGame }: GameWelcomeProps) {
             <div className="space-y-6 text-left">
               <div>
                 <h4 className="text-xl font-semibold text-gray-800 mb-2">🎯 Mục tiêu game</h4>
-                <p className="text-gray-600">
-                  Đưa Việt Nam trở thành quốc gia phát triển đến năm 2045 thông qua 4 giai đoạn:
+                <p className="text-gray-600 mb-3">
+                  Biến Việt Nam thành <strong>quốc gia phát triển, sáng tạo vì con người</strong> đến năm 2045.
                 </p>
-                <ul className="mt-3 space-y-2 text-gray-600">
-                  <li>💰 <strong>Giai đoạn 1:</strong> Phân bổ ngân sách hậu COVID</li>
-                  <li>🚀 <strong>Giai đoạn 2:</strong> Lựa chọn công nghệ chiến lược</li>
-                  <li>📡 <strong>Giai đoạn 3:</strong> Kết nối mạng toàn quốc</li>
-                  <li>⚖️ <strong>Giai đoạn 4:</strong> Cân bằng phát triển bền vững</li>
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
+                  <p className="text-sm text-blue-800 italic">
+                    "Công nghệ chỉ là công cụ, con người mới là động lực"
+                  </p>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  <strong>Thông điệp:</strong> Công nghiệp hóa vì con người – Sáng tạo vì tương lai
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-semibold text-gray-800 mb-2">🕹️ Cơ chế game</h4>
+                <div className="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded mb-2">
+                  <p className="text-sm text-yellow-800">
+                    <strong>Không có trắc nghiệm!</strong> Thay vào đó:
+                  </p>
+                </div>
+                <ul className="mt-2 space-y-2 text-gray-600 text-sm">
+                  <li>✅ Bạn <strong>chọn chính sách</strong> dựa trên tình huống</li>
+                  <li>✅ <strong>Quan sát hệ quả</strong> qua 4 chỉ số</li>
+                  <li>✅ <strong>Rút bài học</strong> từ quyết định của mình</li>
+                  <li>✅ Học cách cân bằng phát triển bền vững</li>
                 </ul>
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">📊 Theo dõi chỉ số</h4>
-                <div className="space-y-2 text-gray-600">
-                  <div>📈 <strong>Kinh tế:</strong> Tăng trưởng GDP và thịnh vượng</div>
-                  <div>👥 <strong>Xã hội:</strong> Phúc lợi và hạnh phúc người dân</div>
-                  <div>🔬 <strong>Công nghệ:</strong> Mức độ tự chủ và đổi mới</div>
-                  <div>🌱 <strong>Môi trường:</strong> Bảo vệ và phát triển bền vững</div>
+                <h4 className="text-xl font-semibold text-gray-800 mb-2">🗓️ 4 Giai đoạn phát triển</h4>
+                <div className="space-y-3">
+                  <div className="border-l-4 border-red-400 pl-3">
+                    <h5 className="font-semibold text-gray-800">💰 Giai đoạn 1 (2025-2030): Hậu COVID</h5>
+                    <p className="text-sm text-gray-600">
+                      Kinh tế khó khăn, công nghệ thay đổi nhanh. <strong>Cân bằng tăng trưởng và bảo vệ lao động.</strong>
+                    </p>
+                  </div>
+                  
+                  <div className="border-l-4 border-blue-400 pl-3">
+                    <h5 className="font-semibold text-gray-800">🚀 Giai đoạn 2 (2030-2035): Bùng nổ công nghệ</h5>
+                    <p className="text-sm text-gray-600">
+                      AI, IoT, xe điện bùng nổ. <strong>Lựa chọn tự chủ hay lệ thuộc công nghệ?</strong>
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-green-400 pl-3">
+                    <h5 className="font-semibold text-gray-800">📡 Giai đoạn 3 (2035-2040): Khoảng cách số</h5>
+                    <p className="text-sm text-gray-600">
+                      Chênh lệch đô thị - nông thôn gia tăng. <strong>Đưa nông thôn vào kỷ nguyên số.</strong>
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-purple-400 pl-3">
+                    <h5 className="font-semibold text-gray-800">⚖️ Giai đoạn 4 (2040-2045): Thử thách 2045</h5>
+                    <p className="text-sm text-gray-600">
+                      Việt Nam tiến gần mục tiêu. <strong>Phát triển bền vững là chìa khóa.</strong>
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">🎮 Cách chơi</h4>
-                <p className="text-gray-600">
-                  Mỗi giai đoạn, bạn sẽ đối mặt với một mini-game khác nhau. Đưa ra quyết định
-                  chiến lược và quan sát tác động lên 4 chỉ số. Mục tiêu là duy trì cân bằng và
-                  phát triển bền vững.
+                <h4 className="text-xl font-semibold text-gray-800 mb-2">📊 4 Chỉ số theo dõi</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-blue-600">📈</span>
+                    <div>
+                      <strong className="text-gray-800">Kinh tế:</strong>
+                      <span className="text-gray-600"> Tăng trưởng GDP, thu nhập người dân, và sức cạnh tranh quốc gia</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-green-600">👥</span>
+                    <div>
+                      <strong className="text-gray-800">Xã hội:</strong>
+                      <span className="text-gray-600"> Phúc lợi, giáo dục, y tế, và hạnh phúc của người dân</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-purple-600">🔬</span>
+                    <div>
+                      <strong className="text-gray-800">Công nghệ:</strong>
+                      <span className="text-gray-600"> Mức độ tự chủ, đổi mới sáng tạo, và năng lực nghiên cứu</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-emerald-600">🌱</span>
+                    <div>
+                      <strong className="text-gray-800">Môi trường:</strong>
+                      <span className="text-gray-600"> Bảo vệ thiên nhiên, giảm ô nhiễm, và phát triển xanh</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-semibold text-gray-800 mb-2">📚 Bài học chính</h4>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li>✨ Hiện đại hóa phải <strong>gắn với con người</strong></li>
+                  <li>✨ Tự chủ công nghệ là <strong>yếu tố sống còn</strong></li>
+                  <li>✨ Công nghệ chỉ có ý nghĩa khi <strong>phục vụ mọi người</strong></li>
+                  <li>✨ Phát triển bền vững là <strong>CNH thế kỷ 21</strong></li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg">
+                <p className="text-sm text-gray-700 text-center italic">
+                  🇻🇳 "Tương lai không được lập trình sẵn – mà do con người Việt Nam viết nên."
                 </p>
               </div>
             </div>

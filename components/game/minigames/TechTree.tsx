@@ -132,6 +132,20 @@ export default function TechTree({ onComplete }: TechTreeProps) {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
+      <div className="bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 rounded-xl p-6 border-l-4 border-blue-600 mb-6">
+        <h4 className="text-lg font-bold text-gray-900 mb-2">📅 Bối cảnh: 2030-2035 - Bùng nổ công nghệ</h4>
+        <p className="text-gray-700 mb-3">
+          AI, IoT, xe điện, năng lượng tái tạo đang bùng nổ toàn cầu. Việt Nam đứng trước lựa chọn quan trọng: 
+          <strong> Tự chủ công nghệ hay lệ thuộc vào nước ngoài?</strong>
+        </p>
+        <div className="bg-white/60 rounded p-3">
+          <p className="text-sm text-gray-800">
+            💡 <strong>Thách thức:</strong> Mua công nghệ ngoại (nhanh nhưng lệ thuộc) hay tự nghiên cứu phát triển 
+            (chậm nhưng tự chủ)? Chọn công nghệ nào để Việt Nam không bị bỏ lại phía sau?
+          </p>
+        </div>
+      </div>
+
       <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6">
         <div className="flex justify-between items-center">
           <div>
@@ -207,11 +221,29 @@ export default function TechTree({ onComplete }: TechTreeProps) {
         })}
       </div>
 
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
-        <p className="text-sm text-yellow-800">
-          💡 <strong>Mẹo:</strong> Chọn 2-3 công nghệ có tính bổ trợ cho nhau. AI + IoT tạo hiệu
-          ứng synergy. Năng lượng tái tạo giúp phát triển bền vững.
-        </p>
+      <div className="space-y-3">
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
+          <p className="text-sm text-blue-800">
+            📖 <strong>Bài học quốc tế:</strong> Hàn Quốc chọn <strong>bán dẫn + AI</strong>, 
+            Singapore chọn <strong>IoT + Smart City</strong>, Đan Mạch chọn <strong>năng lượng tái tạo</strong>. 
+            Không ai có đủ nguồn lực cho tất cả - phải <strong>chọn điểm mạnh</strong> để tập trung phát triển.
+          </p>
+        </div>
+        
+        <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-lg">
+          <p className="text-sm text-purple-800">
+            ⚡ <strong>Hiệu ứng Synergy:</strong> AI + IoT = Nhà máy thông minh, Nông nghiệp 4.0. 
+            Năng lượng tái tạo + IoT = Lưới điện thông minh. Biotechnology + AI = Y tế chính xác.
+          </p>
+        </div>
+
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
+          <p className="text-sm text-yellow-800">
+            💡 <strong>Chiến lược gợi ý:</strong> Chọn 2-3 công nghệ có tính bổ trợ (không nên chọn cả 4 - 
+            quá dàn trải). Ưu tiên công nghệ phù hợp với thế mạnh Việt Nam: Nông nghiệp (IoT + Biotech), 
+            Sản xuất (AI + IoT), hoặc Xanh hóa (Renewable + IoT).
+          </p>
+        </div>
       </div>
 
       <button
