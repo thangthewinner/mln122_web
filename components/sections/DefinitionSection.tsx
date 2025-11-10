@@ -122,7 +122,7 @@ const DefinitionSection = () => {
                           <span className="text-lg">🇸🇬</span>
                           <span className="text-sm font-medium text-gray-700">Singapore</span>
                         </div>
-                        <span className="text-lg font-bold text-green-600">64.7</span>
+                        <span className="text-lg font-bold text-green-600">61.2</span>
                       </div>
                       <div className="h-10 bg-gray-100 rounded-lg relative overflow-hidden">
                         <motion.div 
@@ -132,7 +132,7 @@ const DefinitionSection = () => {
                           transition={{ duration: 1, delay: 0.2 }}
                           className="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-end pr-3"
                         >
-                          <span className="text-xs font-bold text-white">Hàng đầu ASEAN</span>
+                          <span className="text-xs font-bold text-white">#4 Toàn cầu</span>
                         </motion.div>
                       </div>
                     </div>
@@ -149,7 +149,7 @@ const DefinitionSection = () => {
                       <div className="h-10 bg-gray-100 rounded-lg relative overflow-hidden">
                         <motion.div 
                           initial={{ width: 0 }}
-                          whileInView={{ width: "56%" }}
+                          whileInView={{ width: "59%" }}
                           viewport={{ once: true }}
                           transition={{ duration: 1, delay: 0.5 }}
                           className="h-full bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg flex items-center justify-end pr-3"
@@ -165,8 +165,8 @@ const DefinitionSection = () => {
                         <span className="text-2xl">⚠️</span>
                         <div className="text-center">
                           <p className="text-sm text-gray-600">Khoảng cách cần thu hẹp</p>
-                          <p className="text-2xl font-bold text-red-600">28.5 điểm</p>
-                          <p className="text-xs text-gray-500">(tương đương 44%)</p>
+                          <p className="text-2xl font-bold text-red-600">25.0 điểm</p>
+                          <p className="text-xs text-gray-500">(tương đương 41%)</p>
                         </div>
                       </div>
                     </div>
