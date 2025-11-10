@@ -127,7 +127,7 @@ const DefinitionSection = () => {
                       <div className="h-10 bg-gray-100 rounded-lg relative overflow-hidden">
                         <motion.div 
                           initial={{ width: 0 }}
-                          whileInView={{ width: "61.2%" }}
+                          whileInView={{ width: "97%" }}
                           viewport={{ once: true }}
                           transition={{ duration: 1, delay: 0.2 }}
                           className="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-end pr-3"
@@ -149,7 +149,7 @@ const DefinitionSection = () => {
                       <div className="h-10 bg-gray-100 rounded-lg relative overflow-hidden">
                         <motion.div 
                           initial={{ width: 0 }}
-                          whileInView={{ width: "36.2%" }}
+                          whileInView={{ width: "67%" }}
                           viewport={{ once: true }}
                           transition={{ duration: 1, delay: 0.5 }}
                           className="h-full bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg flex items-center justify-end pr-3"
