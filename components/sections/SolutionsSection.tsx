@@ -224,7 +224,7 @@ const SolutionsSection = () => {
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                   <h4 className="font-semibold mb-2 flex items-center">
-                    <span className="text-2xl mr-2">🇻🇳</span> Chủ quyền
+                    <span className="text-2xl mr-2" style={{ fontFamily: "'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif" }}>🇻🇳</span> Chủ quyền
                   </h4>
                   <p className="text-sm opacity-90">
                     Đảm bảo an ninh, độc lập trong kỷ nguyên số

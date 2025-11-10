@@ -45,6 +45,76 @@ const ImpactSection = () => {
             </p>
           </div>
 
+          {/* Theoretical Analysis Box */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.8 }}
+            className="mb-12 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl p-8 md:p-10 border-2 border-indigo-200 shadow-xl"
+          >
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-600 text-white rounded-full mb-4">
+                <span className="text-3xl">📚</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-2">
+                Phân tích theo Mác – Lênin và thực tiễn Việt Nam
+              </h3>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Tác động tích cực */}
+              <div className="bg-white rounded-xl p-6 border-2 border-green-200 shadow-lg">
+                <h4 className="text-xl font-bold text-green-700 mb-4 flex items-center">
+                  <span className="text-2xl mr-2">✅</span> Tác động tích cực
+                </h4>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2 mt-1">•</span>
+                    <span>Tăng năng suất, giảm chi phí sản xuất.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2 mt-1">•</span>
+                    <span>Thúc đẩy đổi mới mô hình tăng trưởng.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2 mt-1">•</span>
+                    <span>Cơ hội phát triển kinh tế số, thương mại điện tử, AI, IoT.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2 mt-1">•</span>
+                    <span>Giúp Việt Nam rút ngắn khoảng cách phát triển với các nước tiên tiến.</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Tác động tiêu cực */}
+              <div className="bg-white rounded-xl p-6 border-2 border-red-200 shadow-lg">
+                <h4 className="text-xl font-bold text-red-700 mb-4 flex items-center">
+                  <span className="text-2xl mr-2">⚠️</span> Tác động tiêu cực
+                </h4>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2 mt-1">•</span>
+                    <span>Gia tăng khoảng cách giàu – nghèo, giữa đô thị và nông thôn.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2 mt-1">•</span>
+                    <span>Doanh nghiệp nhỏ dễ bị "tụt hậu công nghệ".</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2 mt-1">•</span>
+                    <span>Nguy cơ mất việc làm do tự động hóa.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2 mt-1">•</span>
+                    <span>Phụ thuộc công nghệ nước ngoài nếu thiếu năng lực sáng tạo nội địa.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Impact Grid */}
           <motion.div
             variants={containerVariants}

@@ -119,7 +119,7 @@ export const INITIAL_ACHIEVEMENTS: Achievement[] = [
     name: 'Đổi mới sáng tạo',
     description: 'Đạt chỉ số công nghệ > 85%',
     hint: 'Đầu tư mạnh vào R&D (G1), chọn nhiều công nghệ tiên tiến (G2), ưu tiên kết nối Miền Bắc (G3)',
-    icon: '🚀',
+    icon: '🎯',
     unlocked: false,
   },
   {
@@ -151,7 +151,7 @@ export const INITIAL_ACHIEVEMENTS: Achievement[] = [
     name: 'Việt Nam 2045',
     description: 'Đạt kịch bản thành công tốt nhất',
     hint: 'Đạt xếp hạng A+ (>90%) với tất cả chỉ số >70% - cần chiến lược tối ưu trong cả 4 giai đoạn',
-    icon: '🇻🇳',
+    icon: '🌟',
     unlocked: false,
   },
 ];

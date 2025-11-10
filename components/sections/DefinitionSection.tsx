@@ -141,7 +141,7 @@ const DefinitionSection = () => {
                     <div className="mb-3">
                       <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center gap-2">
-                          <span className="text-lg">🇻🇳</span>
+                          <span className="text-lg" style={{ fontFamily: "'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif" }}>🇻🇳</span>
                           <span className="text-sm font-medium text-gray-700">Việt Nam</span>
                         </div>
                         <span className="text-lg font-bold text-orange-600">36.2</span>

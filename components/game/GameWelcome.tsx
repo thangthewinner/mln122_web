@@ -39,7 +39,9 @@ export default function GameWelcome({ onStartGame }: GameWelcomeProps) {
         transition={{ duration: 0.5 }}
         className="mb-8"
       >
-        <div className="text-8xl mb-4 animate-bounce">🇻🇳</div>
+        <div className="text-8xl mb-4 animate-bounce">
+          <span className="inline-block" style={{ fontFamily: "'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif" }}>🇻🇳</span>
+        </div>
         <h1 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 mb-4">
           VIỆT NAM 2045
         </h1>
@@ -99,13 +101,13 @@ export default function GameWelcome({ onStartGame }: GameWelcomeProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.7 }}
-        className="bg-white rounded-2xl p-6 shadow-xl max-w-2xl mx-auto"
+        className="bg-white rounded-2xl p-6 shadow-xl max-w-3xl mx-auto"
       >
         <h4 className="text-xl font-bold text-gray-800 mb-4 text-center">
           🏆 Thành tựu: {unlockedCount}/12
         </h4>
-        <div className="flex flex-wrap justify-center gap-3">
-          {achievements.slice(0, 8).map((achievement) => (
+        <div className="grid grid-cols-4 md:grid-cols-6 gap-3 justify-items-center">
+          {achievements.map((achievement) => (
             <div
               key={achievement.id}
               className={`text-center transition-all duration-300 ${
@@ -115,12 +117,12 @@ export default function GameWelcome({ onStartGame }: GameWelcomeProps) {
               }`}
               title={achievement.name}
             >
-              <div className="text-5xl">{achievement.icon}</div>
+              <div className="text-4xl md:text-5xl">{achievement.icon}</div>
             </div>
           ))}
         </div>
         <p className="text-sm text-gray-600 text-center mt-4">
-          Hoàn thành game để mở khóa thành tựu!
+          Hoàn thành game để mở khóa tất cả 12 thành tựu!
         </p>
       </motion.div>
 
